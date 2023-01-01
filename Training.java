@@ -74,7 +74,7 @@ public class Training {
 
     	a_sum = 0;
 
-        System.out.println("New Synaptics: " + synaptic_value + "\n");
+        System.err.println("New Synaptics: " + synaptic_value + "\n");
 
         //TODO: Making a synaptical load and output Axiom to other neurons
         return synaptic_value;}

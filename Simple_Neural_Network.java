@@ -35,9 +35,34 @@ import java.util.Map.Entry;
 
 public class Simple_Neural_Network {
 
-    static int t_qty = 10000;
-    static int neuron_qty = 32;
-    static int vol = 4;
+    private static int t_qty = 10000;
+    private static int neuron_qty = 32;
+    private static int vol = 4;
+    
+    public static int getNeuron_qty() {
+		return neuron_qty;
+	}
+
+	public static void setNeuron_qty(int neuron_qty) {
+		Simple_Neural_Network.neuron_qty = neuron_qty;
+	}
+
+	public static int getVol() {
+		return vol;
+	}
+
+	public static void setVol(int vol) {
+		Simple_Neural_Network.vol = vol;
+	}
+
+	public static int getT_qty() {
+		return t_qty;
+	}
+
+	public static void setT_qty(int t_qty) {
+		Simple_Neural_Network.t_qty = t_qty;
+	}
+
     
     Synaptics syn = new Synaptics();
     int standard_neurons = syn.getNeuron();
@@ -70,7 +95,7 @@ public class Simple_Neural_Network {
         loaded.add(t_in);
         loaded.add(t_out);
 
-        System.out.println("The initial loaded inputs at runtime are: " + loaded.get(0) + "\n The intitial Loaded desired output is: " + loaded.get(1) + "\n The quantity of training cycles are: " + loaded.get(2) + "\n");
+        System.err.println("The initial loaded inputs at runtime are: " + loaded.get(0) + "\n The intitial Loaded desired output is: " + loaded.get(1) + "\n The quantity of training cycles are: " + loaded.get(2) + "\n");
 
         return loaded;}
     
@@ -80,23 +105,22 @@ public class Simple_Neural_Network {
      */
 	@SuppressWarnings("unchecked")
 	public static ArrayList<ArrayList<Object>> deploy () {
-
 		Map<Integer, ArrayList<Object>> volume = Mapped_volume.mapped_volume(neuron_qty, vol);
 		ArrayList<Object> connections = new ArrayList<>(Connections.connections(volume));
 		ArrayList<ArrayList<Object>> data = new ArrayList<>();
 
 		for (Entry<Integer, ArrayList<Object>> be : volume.entrySet()) {
-			System.out.println("Volume Key: " + be.getKey() + " Volume Value: " + be.getValue() + ".\n");
+			System.err.println("Volume Key: " + be.getKey() + " Volume Value: " + be.getValue() + ".\n");
 		}
 
-		System.out.print("HashCode : " + volume.hashCode());
-		System.out.println("The neuron Matrices are: \n" + volume);
-		System.out.println("The Neurological connections are: \n" + connections);
+		System.err.print("HashCode : " + volume.hashCode());
+		System.err.println("The neuron Matrices are: \n" + volume);
+		System.err.println("The Neurological connections are: \n" + connections);
 
 		data.add((ArrayList<Object>) connections);
 		data.add((ArrayList<Object>) Mapped_volume.mapped_volume(neuron_qty, vol));
 		
-		System.out.println("Complete data stream from connections and volume mapped: " + data + ".\n");
+		System.err.println("Complete data stream from connections and volume mapped: " + data + ".\n");
 		
 		//Activate the training module in each neuron
 		for (Entry<Integer, ArrayList<Object>> activate : volume.entrySet()) {
@@ -104,7 +128,7 @@ public class Simple_Neural_Network {
 			
 			for (int a = 0; a <= neurological.size(); a++) {
 				neurological.get(0);
-				System.out.println("Neuron: " + activate.getKey() + " - Activated!\n");
+				System.err.println("Neuron: " + activate.getKey() + " - Activated!\n");
 			}
 			
 		}
@@ -117,7 +141,7 @@ public class Simple_Neural_Network {
      * @param args
      */
     public static void main (String []args) {
-        deploy();
+    	deploy();
         Think.think(situation);
-        System.out.println("Considering new situation: " + situation + "\n");}
+        System.err.println("Considering new situation: " + situation + "\n");}
 }

@@ -15,7 +15,8 @@ public class Connections {
     	ArrayList<ArrayList<Object>> connectr = new ArrayList<>();
 
     	//before and after to check any modifications
-    	System.out.println(mapped_volume.hashCode());
+    	System.err.println(mapped_volume.hashCode());
+    	Logger_Writer.setMapped_volume(mapped_volume);
 
     	for (Entry<Integer, ArrayList<Object>> me : mapped_volume.entrySet()) {
     		if (me.getValue() == Neuron.neuron) {
@@ -38,11 +39,9 @@ public class Connections {
     					//build a collection on one value from n and set
     					value.add(n);
     					value.addAll(connectt);
-    					
-    					//add
     					connectionss.addAll(value);
-    					
-    					//clear
+    					System.err.println(connectt);
+    					Logger_Writer.setConnectt(connectt);
     					connectt.clear();
     					value.clear();
     					
@@ -53,6 +52,8 @@ public class Connections {
     					value2.add(n);
     					value2.addAll(connectg);
     					connectionss.addAll(value2);
+    					System.err.println(connectg);
+    					Logger_Writer.setConnectg(connectg);
     					connectg.clear();
     					value2.clear();
     					
@@ -63,12 +64,15 @@ public class Connections {
     					value3.add(n);
     					value3.addAll(connectr);
     					connectionss.addAll(value3);
+    					System.err.println(connectr);
+    					Logger_Writer.setConnectr(connectt);
     					connectr.clear();
     					value3.clear();
     				}
     			}
     		}
-    		System.out.println(connectionss);
+    		System.err.println(connectionss);
+    		Logger_Writer.setConnectionss(connectionss);
     	}
     	
         /**Else try for the entry set if any of n are within the r, g, t of any other n primm connect?
@@ -76,9 +80,8 @@ public class Connections {
     		
     	}*/
     	
-    	System.out.println(mapped_volume.hashCode());
+    	System.err.println(mapped_volume.hashCode());
+    	Logger_Writer.setMapped_volume(mapped_volume);
 
     	return connectionss;}
-
-	
 }
