@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Random;
 
 /**
  * PORTED & MODDED FROM
@@ -64,8 +65,20 @@ public class Simple_Neural_Network {
 		Simple_Neural_Network.t_qty = t_qty;
 	}
 	
-    static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
-    static ArrayList<Object> situation = Situation.situation();
+    private static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
+    
+    public static float getSynaptics() {
+    	
+    	Random synner  = new Random();
+    	
+    	int synaptic = synner.nextInt(synaptics.size());
+    	
+    	float syn = (float) synaptics.get(synaptic);
+    	
+		return syn;
+	}
+
+	static ArrayList<Object> situation = Situation.situation();
     static ArrayList<ArrayList<Object>> connections = new ArrayList<>();
     static ArrayList<Object> neuron = new ArrayList<>();
     

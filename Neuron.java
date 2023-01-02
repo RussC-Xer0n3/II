@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Neuron {
 
-	public static final ArrayList<Object> neuron = null;
+	//public static final ArrayList<Object> neuron = neuron(null);
 
 	/**
      * Thinking if we input the connections to think() as well as the
@@ -18,11 +18,11 @@ public class Neuron {
      * We still need all the neurons to talk according to their connectivity. 
 	 * @throws IOException 
      */
-    public static ArrayList<Object> neuron (ArrayList<Object> training_set, float synaptic_value, Object t, Object g, Object r, int t_qty) throws IOException {
+    public static ArrayList<Object> neuron (ArrayList<Object> training_set) throws IOException {
 
         ArrayList<Object> neuron = new ArrayList<>();
 
-        neuron.add(Training.training(training_set, synaptic_value, t_qty));
+        neuron.add(Training.training(training_set));
         neuron.add(Touch.t());
         neuron.add(Green.g());
         neuron.add(Red.r());

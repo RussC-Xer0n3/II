@@ -15,7 +15,7 @@ public class Training {
      * @return 
 	 * @throws IOException 
      */
-    public static float training(ArrayList<Object> training_set, float synaptic_value, int t_qty) throws IOException {
+    public static float training(ArrayList<Object> training_set) throws IOException {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
@@ -24,6 +24,8 @@ public class Training {
     	float a_sum = 0;
     	int t, e, u, r, h, k, q;
     	float inputsY, sigdiv, inputsN, inputsA;
+    	int t_qty = Simple_Neural_Network.getT_qty();
+    	float synaptic = Simple_Neural_Network.getSynaptics();
 
         ArrayList<Object> error = new ArrayList<>();
         ArrayList<Object> mplex = new ArrayList<>();
@@ -78,13 +80,13 @@ public class Training {
         Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
 
     	//Add the mean average adjustment to the synaptic value
-    	synaptic_value += a_sum;
+    	synaptic += a_sum;
 
     	a_sum = 0;
 
-        System.err.println("New Synaptics: " + synaptic_value + "\n");
+        System.err.println("New Synaptics: " + synaptic + "\n");
 
         //TODO: Making a synaptical load and output Axiom to other neurons
-        return synaptic_value;}
+        return synaptic;}
 	
 }
