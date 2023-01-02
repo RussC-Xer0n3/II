@@ -11,7 +11,7 @@ public class Logger_Writer {
 	//Set all the variables empty
 	private static float time;
 	protected static File data_doc;
-	private static float synaptics;
+	private static ArrayList<Object> synaptics;
 	private static float adjustment;
 	private static ArrayList<Object> errors;
 	private static ArrayList<Object> situation;
@@ -20,8 +20,8 @@ public class Logger_Writer {
 	private static ArrayList<ArrayList<Object>> connectg;
 	private static ArrayList<ArrayList<Object>> connectr;
 	private static ArrayList<ArrayList<Object>> training_set;
-	private static ArrayList<ArrayList<Object>> transpose_after;
-	private static ArrayList<ArrayList<Object>> transpose_before;
+	private static ArrayList<Object> transpose_after;
+	private static ArrayList<Object> transpose_before;
 	private static Map<Integer, ArrayList<Object>> mapped_volume;
 
 	/**
@@ -99,7 +99,7 @@ public class Logger_Writer {
 			switch (state) {
 				case CONN:
 					try {
-						stack.write("Neural Connections:\n " + connectionss + ".\n");}
+						stack.write("Neural Connections:\n " + Logger_Writer.getConnectionss() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -107,7 +107,7 @@ public class Logger_Writer {
 					break;
 				case TOUCH:
 					try {
-						stack.write("Touch Proximity Connections:\n " + connectt + ".\n");}
+						stack.write("Touch Proximity Connections:\n " + Logger_Writer.getConnectt() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -115,7 +115,7 @@ public class Logger_Writer {
 					break;
 				case GREEN:
 					try {
-						stack.write("Green proximity Connections:\n " + connectg + ".\n");}
+						stack.write("Green proximity Connections:\n " + Logger_Writer.getConnectg() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -123,7 +123,7 @@ public class Logger_Writer {
 					break;
 				case RED:
 					try {
-						stack.write("Red proximity Connections:\n " + connectr + ".\n");}
+						stack.write("Red proximity Connections:\n " + Logger_Writer.getConnectr() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -131,7 +131,7 @@ public class Logger_Writer {
 					break;
 				case MAVOL:
 					try {
-						stack.write("The entire mapped volume:\n " + mapped_volume.hashCode() + ".\n");}
+						stack.write("The entire mapped volume:\n " + Logger_Writer.getMapped_volume().hashCode() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -139,7 +139,7 @@ public class Logger_Writer {
 					break;
 				case SYNAP:
 					try {
-						stack.write("Current synaptics:\n" + synaptics + "\n");}
+						stack.write("Current synaptics:\n" + Logger_Writer.getSynaptics() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -147,7 +147,7 @@ public class Logger_Writer {
 					break;
 				case TRANSB4:
 					try {
-						stack.write("Data fed in before the transpoition:\n" + transpose_before + "\n");}
+						stack.write("Data fed in before the transpoition:\n" + Logger_Writer.getTranspose_before() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -155,7 +155,7 @@ public class Logger_Writer {
 					break;
 				case TRANSFTR:
 					try {
-						stack.write("After Transposition of ArrayList:\n" + transpose_after + "\n");}
+						stack.write("After Transposition of ArrayList:\n" + Logger_Writer.getTranspose_after() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -163,7 +163,7 @@ public class Logger_Writer {
 					break;
 				case SITUATION:
 					try {
-						stack.write("The new situation to be assessed after training: " + adjustment + ".\n");}
+						stack.write("The new situation to be assessed after training: " + Logger_Writer.getSituation() + ".\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -171,7 +171,7 @@ public class Logger_Writer {
 					break;
 				case ADJUSTMENT:
 					try {
-						stack.write("Synaptical adjustments made: " + adjustment + "\n");}
+						stack.write("Synaptical adjustments made: " + Logger_Writer.getAdjustment() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -179,7 +179,7 @@ public class Logger_Writer {
 					break;
 				case TRAINSET:
 					try {
-						stack.write("The set to be trained with:\n" + training_set + "\n");}
+						stack.write("The set to be trained with:\n" + Logger_Writer.getTraining_set() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -187,7 +187,7 @@ public class Logger_Writer {
 					break;
 				case ERRORS:
 					try {
-						stack.write("Errors before computation of synapse:\n" + errors + "\n");}
+						stack.write("Errors before computation of synapse:\n" + Logger_Writer.getErrors() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -195,7 +195,7 @@ public class Logger_Writer {
 					break;
 				case TIME:
 					try {
-						stack.write("Time taken (mm.ss.ms) : " + time + "\n");}
+						stack.write("Time taken (mm.ss.ms) : " + Logger_Writer.getTime() + "\n");}
 					catch (IOException e) {
 					      System.err.println("An error occurred." + e);
 					      e.printStackTrace();
@@ -266,12 +266,12 @@ public class Logger_Writer {
 		Logger_Writer.time = time;
 	}
 
-	public static float getSynaptics() {
+	public static ArrayList<Object> getSynaptics() {
 		return synaptics;
 	}
 
-	public static void setSynaptics(float synaptics) {
-		Logger_Writer.synaptics = synaptics;
+	public static void setSynaptics(ArrayList<Object> synaptics2) {
+		Logger_Writer.synaptics = synaptics2;
 	}
 
 	public static float getAdjustment() {
@@ -306,19 +306,19 @@ public class Logger_Writer {
 		Logger_Writer.training_set = training_set;
 	}
 
-	public static ArrayList<ArrayList<Object>> getTranspose_after() {
+	public static ArrayList<Object> getTranspose_after() {
 		return transpose_after;
 	}
 
-	public static void setTranspose_after(ArrayList<ArrayList<Object>> transpose_after) {
-		Logger_Writer.transpose_after = transpose_after;
+	public static void setTranspose_after(ArrayList<Object> transpose) {
+		Logger_Writer.transpose_after = transpose;
 	}
 
-	public static ArrayList<ArrayList<Object>> getTranspose_before() {
+	public static ArrayList<Object> getTranspose_before() {
 		return transpose_before;
 	}
 
-	public static void setTranspose_before(ArrayList<ArrayList<Object>> transpose_before) {
-		Logger_Writer.transpose_before = transpose_before;
+	public static void setTranspose_before(ArrayList<Object> arrayList) {
+		Logger_Writer.transpose_before = arrayList;
 	}
 }

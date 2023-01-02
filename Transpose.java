@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Transpose {
@@ -10,11 +11,15 @@ public class Transpose {
      * MODDED
      * 						
      * @param arrayList
+	 * @throws IOException 
      */
-    public static ArrayList<Object> transpose (ArrayList<Object> arrayList) {
+    public static ArrayList<Object> transpose (ArrayList<Object> arrayList) throws IOException {
         
         int i, j;
 
+        Logger_Writer.setTranspose_before(arrayList);
+        Logger_Writer.Logger_Printer(PrinterState.TRANSB4);
+        
         ArrayList<Object> transpose = new ArrayList<>();
 
         int count = arrayList.size();
@@ -30,6 +35,9 @@ public class Transpose {
                 transpose.set(j, transpose_row.get(0));
                 transpose_row.clear();}}
 
+        Logger_Writer.setTranspose_after(transpose);
+        Logger_Writer.Logger_Printer(PrinterState.TRANSFTR);
+        
         return transpose;}
 	
 }

@@ -11,7 +11,7 @@ public class Synaptics {
 		return neuron_qty;
 	}
 
-	public int setNeuron(int neurons) {
+	public static int setNeuron(int neurons) {
 		return neuron_qty = neurons;
 	}
 

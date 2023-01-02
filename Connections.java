@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -7,7 +8,7 @@ import java.util.Map.Entry;
 public class Connections {
 
 	@SuppressWarnings("unchecked")
-	public static ArrayList<Object> connections (Map<Integer, ArrayList<Object>> mapped_volume) {
+	public static ArrayList<Object> connections (Map<Integer, ArrayList<Object>> mapped_volume) throws IOException {
     	ArrayList<Object> n = new ArrayList<>();
     	ArrayList<Object> connectionss = new ArrayList<>();
     	ArrayList<ArrayList<Object>> connectt = new ArrayList<>();
@@ -17,6 +18,7 @@ public class Connections {
     	//before and after to check any modifications
     	System.err.println(mapped_volume.hashCode());
     	Logger_Writer.setMapped_volume(mapped_volume);
+    	Logger_Writer.Logger_Printer(PrinterState.MAVOL);
 
     	for (Entry<Integer, ArrayList<Object>> me : mapped_volume.entrySet()) {
     		if (me.getValue() == Neuron.neuron) {
@@ -42,6 +44,7 @@ public class Connections {
     					connectionss.addAll(value);
     					System.err.println(connectt);
     					Logger_Writer.setConnectt(connectt);
+    					Logger_Writer.Logger_Printer(PrinterState.TOUCH);
     					connectt.clear();
     					value.clear();
     					
@@ -54,6 +57,7 @@ public class Connections {
     					connectionss.addAll(value2);
     					System.err.println(connectg);
     					Logger_Writer.setConnectg(connectg);
+    					Logger_Writer.Logger_Printer(PrinterState.GREEN);
     					connectg.clear();
     					value2.clear();
     					
@@ -66,6 +70,7 @@ public class Connections {
     					connectionss.addAll(value3);
     					System.err.println(connectr);
     					Logger_Writer.setConnectr(connectt);
+    					Logger_Writer.Logger_Printer(PrinterState.RED);
     					connectr.clear();
     					value3.clear();
     				}
@@ -73,6 +78,7 @@ public class Connections {
     		}
     		System.err.println(connectionss);
     		Logger_Writer.setConnectionss(connectionss);
+    		Logger_Writer.Logger_Printer(PrinterState.CONN);
     	}
     	
         /**Else try for the entry set if any of n are within the r, g, t of any other n primm connect?
@@ -82,6 +88,7 @@ public class Connections {
     	
     	System.err.println(mapped_volume.hashCode());
     	Logger_Writer.setMapped_volume(mapped_volume);
+    	Logger_Writer.Logger_Printer(PrinterState.MAVOL);
 
     	return connectionss;}
 }

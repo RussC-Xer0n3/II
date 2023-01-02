@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Training {
@@ -12,9 +13,9 @@ public class Training {
      * @param ArrayList<Object> - Our training set / data set object
      * @param Float synaptic_value - Our initial and subsequent synaptic values as inputs
      * @return 
+	 * @throws IOException 
      */
-    public static float training(ArrayList<Object> training_set, float synaptic_value, int t_qty) {
-        //TODO: All the logging and feedback to file and system out
+    public static float training(ArrayList<Object> training_set, float synaptic_value, int t_qty) throws IOException {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
@@ -41,7 +42,9 @@ public class Training {
             	if (a == b) {
             		sum += 1;}}
 
-            error.add(((output.size()-1 - sum) / 100) * output.size()-1);}     
+            error.add(((output.size()-1 - sum) / 100) * output.size()-1);
+            Logger_Writer.setErrors(error);
+            Logger_Writer.Logger_Printer(PrinterState.ERRORS);}     
 
         sum = 0;
 
@@ -67,7 +70,12 @@ public class Training {
             	inputsA = inputsN;
             	a_sum += inputsA;}}
 
+    	Logger_Writer.setAdjustment(a_sum);
+        Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
+        
     	a_sum /= adjustment.size();
+    	Logger_Writer.setAdjustment(a_sum);
+        Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
 
     	//Add the mean average adjustment to the synaptic value
     	synaptic_value += a_sum;

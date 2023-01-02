@@ -3,6 +3,7 @@
  */
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -62,51 +63,36 @@ public class Simple_Neural_Network {
 	public static void setT_qty(int t_qty) {
 		Simple_Neural_Network.t_qty = t_qty;
 	}
-
-    
-    Synaptics syn = new Synaptics();
-    int standard_neurons = syn.getNeuron();
-    int neurons_qty = syn.setNeuron(neuron_qty);
-    
+	
     static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
-    static Object loaded = loader();
     static ArrayList<Object> situation = Situation.situation();
     static ArrayList<ArrayList<Object>> connections = new ArrayList<>();
     static ArrayList<Object> neuron = new ArrayList<>();
-
-    /**
-     * The loader is the source for I/O per neuron and is the initial loader
-     * from that point on the t_in will be the outputs from each neuron in 
-     * the volumetrics
-     * 
-     * @return two-dimensional ArrayList loaded
-     */
-    public static ArrayList<ArrayList<Object>> loader () {
-
-        ArrayList<Object> t_in = new ArrayList<>();
-        ArrayList<Object> t_out = new ArrayList<>();
-
-        ArrayList<ArrayList<Object>> loaded = new ArrayList<>();
-
-        for(int h = 0; h <= 20; h++) {t_in.add(Situation.situation());}
-
-        t_out.add(Situation.situation());
-
-        loaded.add(t_in);
-        loaded.add(t_out);
-
-        System.err.println("The initial loaded inputs at runtime are: " + loaded.get(0) + "\n The intitial Loaded desired output is: " + loaded.get(1) + "\n The quantity of training cycles are: " + loaded.get(2) + "\n");
-
-        return loaded;}
     
     /**
      * Test a method call from the neurons etc here and print some generic results
      * the particular method is for testbedding and data storage
      */
 	@SuppressWarnings("unchecked")
-	public static ArrayList<ArrayList<Object>> deploy () {
+	public static ArrayList<ArrayList<Object>> deploy () throws IOException {
+	
+		Synaptics.setNeuron(neuron_qty);
+		
+		Logger_Writer.setSynaptics(synaptics);
+		Logger_Writer.setSituation(situation);
+		
+		Logger_Writer.Logger_Printer(PrinterState.VOID);
+		Logger_Writer.Logger_Printer(PrinterState.SYNAP);
+		Logger_Writer.Logger_Printer(PrinterState.SITUATION);
+		
 		Map<Integer, ArrayList<Object>> volume = Mapped_volume.mapped_volume(neuron_qty, vol);
+		Logger_Writer.setMapped_volume(volume);
+		Logger_Writer.Logger_Printer(PrinterState.MAVOL);
+		
 		ArrayList<Object> connections = new ArrayList<>(Connections.connections(volume));
+		Logger_Writer.setConnectionss(connections);
+		Logger_Writer.Logger_Printer(PrinterState.CONN);
+		
 		ArrayList<ArrayList<Object>> data = new ArrayList<>();
 
 		for (Entry<Integer, ArrayList<Object>> be : volume.entrySet()) {
@@ -118,7 +104,7 @@ public class Simple_Neural_Network {
 		System.err.println("The Neurological connections are: \n" + connections);
 
 		data.add((ArrayList<Object>) connections);
-		data.add((ArrayList<Object>) Mapped_volume.mapped_volume(neuron_qty, vol));
+		data.add((ArrayList<Object>) volume);
 		
 		System.err.println("Complete data stream from connections and volume mapped: " + data + ".\n");
 		
@@ -130,17 +116,18 @@ public class Simple_Neural_Network {
 				neurological.get(0);
 				System.err.println("Neuron: " + activate.getKey() + " - Activated!\n");
 			}
-			
 		}
 		
+		System.err.println("Activated Neurons.\n");
 		return data;}
 	
     /**
      * Run the training sets and request a new situation for better optimisations
      * Main method
      * @param args
+     * @throws IOException 
      */
-    public static void main (String []args) {
+    public static void main (String []args) throws IOException {
     	deploy();
         Think.think(situation);
         System.err.println("Considering new situation: " + situation + "\n");}

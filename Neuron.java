@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Neuron {
@@ -15,8 +16,9 @@ public class Neuron {
      * 
      * Though there will be dormant neurons if too large a volume (it's fine)
      * We still need all the neurons to talk according to their connectivity. 
+	 * @throws IOException 
      */
-    public static ArrayList<Object> neuron (ArrayList<Object> training_set, float synaptic_value, Object t, Object g, Object r, int t_qty) {
+    public static ArrayList<Object> neuron (ArrayList<Object> training_set, float synaptic_value, Object t, Object g, Object r, int t_qty) throws IOException {
 
         ArrayList<Object> neuron = new ArrayList<>();
 
