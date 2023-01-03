@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class Connections {
-
+	
 	@SuppressWarnings("unchecked")
 	public static ArrayList<Object> connections (Map<Integer, ArrayList<Object>> mapped_volume) throws IOException {
     	ArrayList<Object> n = new ArrayList<>();
@@ -19,9 +19,9 @@ public class Connections {
     	System.err.println(mapped_volume.hashCode());
     	Logger_Writer.setMapped_volume(mapped_volume);
     	Logger_Writer.Logger_Printer(PrinterState.MAVOL);
-
+    	
     	for (Entry<Integer, ArrayList<Object>> me : mapped_volume.entrySet()) {
-    		if (me.getValue() == Neuron.neuron) {
+    		if (me.getValue() == null) {
     			n.add(me.getValue());
     		}
     	}
@@ -29,7 +29,7 @@ public class Connections {
     	//for n compare to entry set r, g, t and connect accordingly
     	for (Entry<Integer, ArrayList<Object>> be : mapped_volume.entrySet()) {
     		
-    		while (be.getValue() == Neuron.neuron) {
+    		while (be.getValue() != null) {
     			
     			for (int v = 0; v <= n.size(); v++) {
     				
