@@ -16,7 +16,7 @@ public class Connections {
     	ArrayList<ArrayList<Object>> connectr = new ArrayList<>();
 
     	//before and after to check any modifications
-    	System.err.println(mapped_volume.hashCode());
+    	System.err.println("Before: " + mapped_volume.hashCode());
     	Logger_Writer.setMapped_volume(mapped_volume);
     	Logger_Writer.Logger_Printer(PrinterState.MAVOL);
     	
@@ -37,8 +37,6 @@ public class Connections {
     					ArrayList<ArrayList<Object>> value = new ArrayList<>();
 
     					connectt.add(new ArrayList<Object>(be.getValue()));
-    					
-    					//build a collection on one value from n and set
     					value.add(n);
     					value.addAll(connectt);
     					connectionss.addAll(value);
@@ -86,7 +84,7 @@ public class Connections {
     		
     	}*/
     	
-    	System.err.println(mapped_volume.hashCode());
+    	System.err.println("After: " + mapped_volume.hashCode());
     	Logger_Writer.setMapped_volume(mapped_volume);
     	Logger_Writer.Logger_Printer(PrinterState.MAVOL);
 

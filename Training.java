@@ -36,7 +36,8 @@ public class Training {
         ArrayList<Object> sds = new ArrayList<>(Sigmoid_derivative.sigmoid_derivative(output));
 
         for (t = 0; t <= t_qty; t++) {
-
+        	//here is where we get the think() to consider the float synaptic value as it changes
+        	Logger_Writer.Logger_Generic("Beginning to assess the nucleus output in the think method: " + synaptic + "\n");
             for (e = 0; e < output.size(); e++) {
             	a = loaded.get(e);
             	b = output.get(e);
@@ -56,13 +57,15 @@ public class Training {
             for(r = 0; r < sds.size(); r++) {
             	sigdiv = (float) sds.get(r);
                 mplex.add(r, inputsY *= sigdiv);}}
-
+        
+        Logger_Writer.Logger_Generic("The sigmoid derivatives are: " + sds + "\n");
         sds.clear();
         error.clear();
 
         //Get a dot product of the matrix transposition and the error multiples of the sigmoid derivatives
     	for (h = 0; h <= output.size(); t++) {adjustment.add(Dot.dot(Transpose.transpose(training), mplex));}
 
+    	Logger_Writer.Logger_Generic("The multiples of the errors to sigmoid derivatives are: " + mplex + "\n");
     	mplex.clear();
 
     	//Take the adjustment values and summise them ready for mean average
@@ -83,7 +86,8 @@ public class Training {
     	synaptic += a_sum;
 
     	a_sum = 0;
-
+    	
+    	Logger_Writer.Logger_Generic("Final synaptic output  from nucleus is: " + synaptic + "\n");
         System.err.println("New Synaptics: " + synaptic + "\n");
 
         //TODO: Making a synaptical load and output Axiom to other neurons

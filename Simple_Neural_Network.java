@@ -119,6 +119,7 @@ public class Simple_Neural_Network {
 		data.add((ArrayList<Object>) connections);
 		data.add((ArrayList<Object>) volume);
 		
+		Logger_Writer.Logger_Generic("Connections and Neurologically Mapped Volume respectively: \n " + data.get(0) + "\n" + data.get(1) + "\n");
 		System.err.println("Complete data stream from connections and volume mapped: " + data + ".\n");
 		
 		//Activate the training module in each neuron

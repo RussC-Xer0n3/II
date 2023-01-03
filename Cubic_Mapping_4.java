@@ -55,13 +55,14 @@ public class Cubic_Mapping_4 {
 	 * @param v - Received autonomously from mapping()
 	 */
 	public static void populate(ArrayList<Object> neuron, int qty, double v) {
-
 		Random rand = new Random();
 
 		int i;
 
 		for (i = 0; i <= qty; i++) { map.put(rand.nextInt((int) v), neuron); 
-		System.out.print("Original mapping after first generation: " + map.hashCode());}}
+		
+		System.err.print("Original mapping after first generation: " + map.hashCode());
+		Logger_Writer.Logger_Generic("Original mapping after first generation: " + map.hashCode());}}
 
 	/**
 	 * Maps the cubic index length to the ArrayList c and calls the populate()
@@ -80,7 +81,8 @@ public class Cubic_Mapping_4 {
 
 		ArrayList<ArrayList<ArrayList<Object>>> c = three_d_list(n);
 
-		System.out.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
+		System.err.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
+		Logger_Writer.Logger_Generic("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
 		
 		for (j = 0; j < n; j++) {
 			for (k = 0; k < n; k++) {
@@ -98,7 +100,8 @@ public class Cubic_Mapping_4 {
 	 * Clear the data in memory store after use.
 	 */
 	public static void clearall() {
-		System.out.println("HashMap before clearance: " + map.hashCode() + "\n");
+		System.err.println("HashMap before clearance: " + map.hashCode() + "\n");
+		Logger_Writer.Logger_Generic("HashMap before clearance: " + map.hashCode() + "\n");
 		map.clear();
 		c.clear();
 	}
