@@ -23,13 +23,17 @@ public class Logger_Writer {
 	private static ArrayList<Object> transpose_after;
 	private static ArrayList<Object> transpose_before;
 	private static Map<Integer, ArrayList<Object>> mapped_volume;
+	private static float synaptic;
 
 	/**
 	 * Create the file and check if it is created
 	 */
 	public static void Logger_Creator() {
+		
+		String file_name = "data_doc.txt";
+		
 		try {
-			File data_doc = new File("data_doc.txt");
+			File data_doc = new File(file_name);
 		
 			if (data_doc.createNewFile()) {
 				System.err.println("File " + data_doc.getAbsolutePath() + " " + data_doc.getName() + " created.\n");
@@ -144,6 +148,15 @@ public class Logger_Writer {
 					    }
 					break;
 				case SYNAP:
+					try {
+						Logger_Checker();
+						stack.write("Current synaptic:\n" + Logger_Writer.getSynaptic() + "\n");}
+					catch (IOException e) {
+					      System.err.println("An error occurred." + e);
+					      e.printStackTrace();
+					    }
+					break;
+				case SYNAPS:
 					try {
 						Logger_Checker();
 						stack.write("Current synaptics:\n" + Logger_Writer.getSynaptics() + "\n");}
@@ -347,5 +360,13 @@ public class Logger_Writer {
 
 	public static void setTranspose_before(ArrayList<Object> arrayList) {
 		Logger_Writer.transpose_before = arrayList;
+	}
+	
+	public static float getSynaptic() {
+		return synaptic;
+	}
+
+	public static void setSynaptic(float synaptic) {
+		Logger_Writer.synaptic = synaptic;
 	}
 }

@@ -65,9 +65,14 @@ public class Simple_Neural_Network {
 		Simple_Neural_Network.t_qty = t_qty;
 	}
 	
+	//Set the list of synaptical values to choose from
     private static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
     
-    public static float getSynaptics() {
+    public static ArrayList<Object> getSynaptics() {
+    	return synaptics;
+    }
+    //Randomise the selection of a synaptical value from the list
+    public static float getSynaptic() {
     	
     	Random synner  = new Random();
     	
@@ -78,6 +83,7 @@ public class Simple_Neural_Network {
 		return syn;
 	}
 
+    //Get a new situation to be looked at
 	static ArrayList<Object> situation = Situation.situation();
     static ArrayList<ArrayList<Object>> connections = new ArrayList<>();
     static ArrayList<Object> neuron = new ArrayList<>();
@@ -133,6 +139,7 @@ public class Simple_Neural_Network {
 		}
 		
 		System.err.println("Activated Neurons.\n");
+		Logger_Writer.Logger_Generic("The mapped volume and it's connections are:\n" + data);
 		return data;}
 	
     /**

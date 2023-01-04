@@ -43,7 +43,8 @@ public class Synaptics {
 
         for (int y = 0; y <= n; y++) {synaptics.add(2 * rand_neuron.nextFloat(min) - max);}
 
-        System.out.println("Weights: " + synaptics + "\n");
+        System.err.println("Weights: " + synaptics + "\n");
+        Logger_Writer.Logger_Generic("Synaptics generated were:\n" + synaptics);
 
         return synaptics;}
 	

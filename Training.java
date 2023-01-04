@@ -15,7 +15,7 @@ public class Training {
      * @return 
 	 * @throws IOException 
      */
-    public static float training(ArrayList<Object> training_set) throws IOException {
+    public static float training(float synaptic) throws IOException {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
@@ -25,13 +25,18 @@ public class Training {
     	int t, e, u, r, h, k, q;
     	float inputsY, sigdiv, inputsN, inputsA;
     	int t_qty = Simple_Neural_Network.getT_qty();
-    	float synaptic = Simple_Neural_Network.getSynaptics();
+    	
+    	float synaptics = synaptic;
+    	
+    	if (synaptics == 0) {
+    		synaptics = Simple_Neural_Network.getSynaptic();
+    	}
 
         ArrayList<Object> error = new ArrayList<>();
         ArrayList<Object> mplex = new ArrayList<>();
         ArrayList<Object> adjustment = new ArrayList<>();
         ArrayList<Object> loaded = new ArrayList<>(Situation.situation());
-        ArrayList<Object> training = new  ArrayList<>(training_set);
+        ArrayList<Object> training = new  ArrayList<>(Training_Set.training_set());
         ArrayList<Object> output = Think.think(training);
         ArrayList<Object> sds = new ArrayList<>(Sigmoid_derivative.sigmoid_derivative(output));
 
@@ -75,10 +80,12 @@ public class Training {
             	inputsA = inputsN;
             	a_sum += inputsA;}}
 
+    	Logger_Writer.Logger_Generic("The adjustment sum before adjustment is: " + a_sum);
     	Logger_Writer.setAdjustment(a_sum);
         Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
         
     	a_sum /= adjustment.size();
+    	Logger_Writer.Logger_Generic("The adjustment sum after adjustment is: " + a_sum);
     	Logger_Writer.setAdjustment(a_sum);
         Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
 
@@ -87,8 +94,10 @@ public class Training {
 
     	a_sum = 0;
     	
+    	Logger_Writer.setSynaptic(synaptic);
     	Logger_Writer.Logger_Generic("Final synaptic output  from nucleus is: " + synaptic + "\n");
         System.err.println("New Synaptics: " + synaptic + "\n");
+        Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 
         //TODO: Making a synaptical load and output Axiom to other neurons
         return synaptic;}

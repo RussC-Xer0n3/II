@@ -14,6 +14,6 @@ public class Mapped_volume {
      */
     public static Map<Integer, ArrayList<Object>> mapped_volume (int neuron_qty, int vol) throws IOException { 
     	Logger_Writer.Logger_Generic("Generating NeurologicalMap of Neurons...\n"); 
-    	return Cubic_Mapping_4.mapping(Neuron.neuron(Training_Set.training_set()), neuron_qty, vol); }
+    	return Cubic_Mapping_4.mapping(Neuron.neuron(), neuron_qty, vol); }
 	
 }

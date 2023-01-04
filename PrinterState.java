@@ -14,6 +14,7 @@ public enum PrinterState {
 	RED,
 	MAVOL,
 	SYNAP,
+	SYNAPS,
 	TRANSB4,
 	TRANSFTR,
 	SITUATION,

@@ -18,11 +18,11 @@ public class Neuron {
      * We still need all the neurons to talk according to their connectivity. 
 	 * @throws IOException 
      */
-    public static ArrayList<Object> neuron (ArrayList<Object> training_set) throws IOException {
+    public static ArrayList<Object> neuron () throws IOException {
 
         ArrayList<Object> neuron = new ArrayList<>();
 
-        neuron.add(Training.training(training_set));
+        neuron.add(Training.training(Simple_Neural_Network.getSynaptic()));
         neuron.add(Touch.t());
         neuron.add(Green.g());
         neuron.add(Red.r());
