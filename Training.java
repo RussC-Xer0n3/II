@@ -99,7 +99,21 @@ public class Training {
         System.err.println("New Synaptics: " + synaptic + "\n");
         Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 
-        //TODO: Making a synaptical load and output Axiom to other neurons
+        //create an ArrayList and a boolean
+        ArrayList<Object> conns = Simple_Neural_Network.getConnectionss();
+        boolean conn = Simple_Neural_Network.getConnectionss() != null;
+        
+        //Making a synaptical load and output Axiom to other neurons
+        for (int x = 0; x <= Simple_Neural_Network.getConnectionss().size(); x++) {
+        	if (conn) {
+        		return synaptic;
+        	} else if (conns.get(x) != null) {
+        		return synaptic;
+        	} else {
+        		continue;
+        	}
+        }
+        
         return synaptic;}
 	
 }

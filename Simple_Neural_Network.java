@@ -40,33 +40,13 @@ public class Simple_Neural_Network {
     private static int t_qty = 10000;
     private static int neuron_qty = 32;
     private static int vol = 4;
-    
-    public static int getNeuron_qty() {
-		return neuron_qty;
-	}
-
-	public static void setNeuron_qty(int neuron_qty) {
-		Simple_Neural_Network.neuron_qty = neuron_qty;
-	}
-
-	public static int getVol() {
-		return vol;
-	}
-
-	public static void setVol(int vol) {
-		Simple_Neural_Network.vol = vol;
-	}
-
-	public static int getT_qty() {
-		return t_qty;
-	}
-
-	public static void setT_qty(int t_qty) {
-		Simple_Neural_Network.t_qty = t_qty;
-	}
 	
 	//Set the list of synaptical values to choose from
     private static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
+    
+    //Get a new situation to be looked at
+    static ArrayList<Object> situation = Situation.situation();
+    static ArrayList<Object> neuron = new ArrayList<>();
     
     public static ArrayList<Object> getSynaptics() {
     	return synaptics;
@@ -82,11 +62,6 @@ public class Simple_Neural_Network {
     	
 		return syn;
 	}
-
-    //Get a new situation to be looked at
-	static ArrayList<Object> situation = Situation.situation();
-    static ArrayList<ArrayList<Object>> connections = new ArrayList<>();
-    static ArrayList<Object> neuron = new ArrayList<>();
     
     /**
      * Test a method call from the neurons etc here and print some generic results
@@ -152,4 +127,33 @@ public class Simple_Neural_Network {
     	deploy();
         Think.think(situation);
         System.err.println("Considering new situation: " + situation + "\n");}
+
+    public static int getNeuron_qty() {
+		return neuron_qty;
+	}
+
+	public static void setNeuron_qty(int neuron_qty) {
+		Simple_Neural_Network.neuron_qty = neuron_qty;
+	}
+
+	public static int getVol() {
+		return vol;
+	}
+
+	public static void setVol(int vol) {
+		Simple_Neural_Network.vol = vol;
+	}
+
+	public static int getT_qty() {
+		return t_qty;
+	}
+
+	public static void setT_qty(int t_qty) {
+		Simple_Neural_Network.t_qty = t_qty;
+	}
+    
+	public static ArrayList<Object> getConnectionss() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
