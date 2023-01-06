@@ -5,6 +5,16 @@ import java.util.ArrayList;
 
 public class Training {
 
+	private static int identifier = 0;
+	
+	public int getIdentifier() {
+		return identifier;
+	}
+	
+	public static int setIdentifier(int id) {
+		return identifier = id;
+	}
+
 	/**
      * Training protocols according to source code which is our nucleus to our neuron
      * The synaptical output into think, is the call to think on the new outputs of the
@@ -12,8 +22,7 @@ public class Training {
      * 
      * @param ArrayList<Object> - Our training set / data set object
      * @param Float synaptic_value - Our initial and subsequent synaptic values as inputs
-     * @return 
-	 * @throws IOException 
+     * @throws IOException 
      */
     public static float training(float synaptic) throws IOException {
     	//TODO: Add timers
@@ -103,17 +112,17 @@ public class Training {
         ArrayList<Object> conns = Simple_Neural_Network.getConnectionss();
         boolean conn = Simple_Neural_Network.getConnectionss() != null;
         
+        //Get current ID in the indices
+        int myID = identifier;
         //Making a synaptical load and output Axiom to other neurons
         for (int x = 0; x <= Simple_Neural_Network.getConnectionss().size(); x++) {
-        	if (conn) {
-        		return synaptic;
-        	} else if (conns.get(x) != null) {
+        	if (conn && ((conns.get(x) == Simple_Neural_Network.getConnectionss() && myID == x))) {
         		return synaptic;
         	} else {
-        		continue;
+        		return myID;
         	}
         }
-        
-        return synaptic;}
+        return synaptic;
+    }
 	
 }

@@ -59,7 +59,7 @@ public class Cubic_Mapping_4 {
 
 		int i;
 
-		for (i = 0; i <= qty; i++) { map.put(rand.nextInt((int) v), neuron); 
+		for (i = 0; i <= qty; i++) { int m = rand.nextInt((int) v); Training.setIdentifier(m); map.put(m, neuron); 
 		
 		System.err.print("Original mapping after first generation: " + map.hashCode());
 		Logger_Writer.Logger_Generic("Original mapping after first generation: " + map.hashCode());}}
