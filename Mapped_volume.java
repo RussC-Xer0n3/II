@@ -13,7 +13,7 @@ public class Mapped_volume {
 	 * @throws IOException 
      */
     public static Map<Integer, ArrayList<Object>> mapped_volume (int neuron_qty, int vol) throws IOException { 
-    	Logger_Writer.Logger_Generic("Generating NeurologicalMap of Neurons...\n"); 
+    	Logger_Writer.Logger_Generic("Generating NeurologicalMap of Neurons...\n");
     	return Cubic_Mapping_4.mapping(Neuron.neuron(), neuron_qty, vol); }
 	
 }

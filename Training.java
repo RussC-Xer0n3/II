@@ -24,14 +24,15 @@ public class Training {
      * @param Float synaptic_value - Our initial and subsequent synaptic values as inputs
      * @throws IOException 
      */
-    public static float training(float synaptic) throws IOException {
+    @SuppressWarnings("unused")
+	public static float training(float synaptic) throws IOException {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
     	Object a, b;
     	int sum = 0;
     	float a_sum = 0;
-    	int t, e, u, r, h, k, q;
+    	int t, e, u, r, h, k, q, x;
     	float inputsY, sigdiv, inputsN, inputsA;
     	int t_qty = Simple_Neural_Network.getT_qty();
     	
@@ -115,7 +116,7 @@ public class Training {
         //Get current ID in the indices
         int myID = identifier;
         //Making a synaptical load and output Axiom to other neurons
-        for (int x = 0; x <= Simple_Neural_Network.getConnectionss().size(); x++) {
+        for (x = 0; x < Simple_Neural_Network.getConnectionss().size(); x++) {
         	if (conn && ((conns.get(x) == Simple_Neural_Network.getConnectionss() && myID == x))) {
         		return synaptic;
         	} else {

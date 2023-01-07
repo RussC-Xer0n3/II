@@ -21,10 +21,10 @@ public class Neuron {
     public static ArrayList<Object> neuron () throws IOException {
 
         ArrayList<Object> neuron = new ArrayList<>();
-
+        
         neuron.add(Training.training(Simple_Neural_Network.getSynaptic()));
         neuron.add(Touch.t());
         neuron.add(Green.g());
         neuron.add(Red.r());
-
+        System.err.println(neuron);
         return neuron;}}

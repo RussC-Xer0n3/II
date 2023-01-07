@@ -42,7 +42,7 @@ public class Simple_Neural_Network {
     private static int vol = 4;
 	
 	//Set the list of synaptical values to choose from
-    private static ArrayList<Object> synaptics = new ArrayList<>(Synaptics.synaptics());
+    private static ArrayList<Object> synaptics = new ArrayList<>();
     
     //Get a new situation to be looked at
     static ArrayList<Object> situation = Situation.situation();
@@ -51,35 +51,39 @@ public class Simple_Neural_Network {
     public static ArrayList<Object> getSynaptics() {
     	return synaptics;
     }
-    //Randomise the selection of a synaptical value from the list
+    //Randomise the selection of a synaptic value from the list
     public static float getSynaptic() {
     	
     	Random synner  = new Random();
     	
-    	int synaptic = synner.nextInt(synaptics.size());
+    	int synaptic = synner.nextInt(Simple_Neural_Network.getSynaptics().size());
     	
     	float syn = (float) synaptics.get(synaptic);
     	
 		return syn;
 	}
-    
-    /**
-     * Test a method call from the neurons etc here and print some generic results
-     * the particular method is for testbedding and data storage
-     */
-	@SuppressWarnings("unchecked")
-	public static ArrayList<ArrayList<Object>> deploy () throws IOException {
 	
-		Synaptics.setNeuron(neuron_qty);
+    /**
+     * Run the training sets and request a new situation for better optimisations
+     * Main method
+     * @param args
+     * @throws IOException 
+     */
+    public static void main (String []args) throws IOException {
+    	Logger_Writer.Logger_Creator();
+    	synaptics.addAll(Synaptics.synaptics());
+    	
+    	Synaptics.setNeuron(neuron_qty);
 		
 		Logger_Writer.setSynaptics(synaptics);
 		Logger_Writer.setSituation(situation);
-		
 		Logger_Writer.Logger_Printer(PrinterState.VOID);
 		Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 		Logger_Writer.Logger_Printer(PrinterState.SITUATION);
 		
 		Map<Integer, ArrayList<Object>> volume = Mapped_volume.mapped_volume(neuron_qty, vol);
+		System.err.println("Hey" + volume.hashCode());
+
 		Logger_Writer.setMapped_volume(volume);
 		Logger_Writer.Logger_Printer(PrinterState.MAVOL);
 		
@@ -115,18 +119,13 @@ public class Simple_Neural_Network {
 		
 		System.err.println("Activated Neurons.\n");
 		Logger_Writer.Logger_Generic("The mapped volume and it's connections are:\n" + data);
-		return data;}
-	
-    /**
-     * Run the training sets and request a new situation for better optimisations
-     * Main method
-     * @param args
-     * @throws IOException 
-     */
-    public static void main (String []args) throws IOException {
-    	deploy();
+    	
         Think.think(situation);
-        System.err.println("Considering new situation: " + situation + "\n");}
+        System.err.println("Considering new situation: " + situation + "\n");
+        Logger_Writer.Logger_Generic("Considering new situation: " + situation + "\n");
+        
+        return;
+    }
 
     public static int getNeuron_qty() {
 		return neuron_qty;

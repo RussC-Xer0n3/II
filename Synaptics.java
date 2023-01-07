@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -25,11 +26,11 @@ public class Synaptics {
      * the nucleus updates it's value to the surrounding neurons. In theory.
      * 
      * @return float synaptic - A starting value to be updated later
+	 * @throws IOException 
      */
-    public static ArrayList<Object> synaptics () {
+    public static ArrayList<Object> synaptics () throws IOException {
 
         float max = (float) 1.0;
-        float min = (float) -1.0;
         
         Synaptics syn = new Synaptics();
         
@@ -41,7 +42,7 @@ public class Synaptics {
 
         ArrayList<Object> synaptics = new ArrayList<>();
 
-        for (int y = 0; y <= n; y++) {synaptics.add(2 * rand_neuron.nextFloat(min) - max);}
+        for (int y = 0; y <= n; y++) {synaptics.add(2 * (rand_neuron.nextFloat(max) - max));}
 
         System.err.println("Weights: " + synaptics + "\n");
         Logger_Writer.Logger_Generic("Synaptics generated were:\n" + synaptics);

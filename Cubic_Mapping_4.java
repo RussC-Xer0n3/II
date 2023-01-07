@@ -1,5 +1,6 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -53,8 +54,10 @@ public class Cubic_Mapping_4 {
 	 * @param neuron
 	 * @param qty - Quantity of neurons
 	 * @param v - Received autonomously from mapping()
+	 * @throws IOException 
 	 */
-	public static void populate(ArrayList<Object> neuron, int qty, double v) {
+	public static void populate(ArrayList<Object> neuron, int qty, double v) throws IOException {
+		System.err.println("Hit populate");
 		Random rand = new Random();
 
 		int i;
@@ -72,14 +75,16 @@ public class Cubic_Mapping_4 {
 	 * @param qty - The quantity of Neurons to deploy randomly in your mapped volumetrics
 	 * @param n - The index to be used to calculate the cubic size of the volume
 	 * @return 
+	 * @throws IOException 
 	 */
 	@SuppressWarnings("unchecked")
-	public static Map<Integer, ArrayList<Object>> mapping(ArrayList<Object> neuron, int qty, int n) {
+	public static Map<Integer, ArrayList<Object>> mapping(ArrayList<Object> neuron, int qty, int n) throws IOException {
 		int j, k, l, i;
 
 		double v = Math.pow(n, 3);
 
-		ArrayList<ArrayList<ArrayList<Object>>> c = three_d_list(n);
+		ArrayList<ArrayList<ArrayList<Object>>> c = Cubic_Mapping_4.three_d_list(n);
+		System.err.println("Hey" + c + "c is the three d list");
 
 		System.err.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
 		Logger_Writer.Logger_Generic("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
@@ -91,15 +96,16 @@ public class Cubic_Mapping_4 {
 					for (i = 0; i < v; i++) {
 						map.put(i, (ArrayList<Object>) c.get(j).get(k).get(l));
 					}}}}
-
-		populate(neuron, qty, v);
+		System.err.println("Hey Map" + map.hashCode());
+		Cubic_Mapping_4.populate(neuron, qty, v);
 
 		return map;}
 
 	/**
 	 * Clear the data in memory store after use.
+	 * @throws IOException 
 	 */
-	public static void clearall() {
+	public static void clearall() throws IOException {
 		System.err.println("HashMap before clearance: " + map.hashCode() + "\n");
 		Logger_Writer.Logger_Generic("HashMap before clearance: " + map.hashCode() + "\n");
 		map.clear();

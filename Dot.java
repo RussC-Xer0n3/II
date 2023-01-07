@@ -1,6 +1,7 @@
 package javatestfiles;
 
 import java.util.ArrayList;
+import java.util.ListIterator;
 
 public class Dot {
 
@@ -14,11 +15,16 @@ public class Dot {
     public static ArrayList<Object> dot (ArrayList<Object> in, ArrayList<Object> out) {
     	ArrayList<Object> outputs = new ArrayList<>();
 
-        for(int q = 0; q < in.size(); q++) {
-            float inputsI = (float) in.get(q);
-            for(int r = 0; r < out.size(); r++) {
-            	float weights = (float) out.get(r);
-                outputs.add(r, inputsI *= weights);}}
-
+    	ListIterator<Object> itn = in.listIterator();
+    	ListIterator<Object> ito = out.listIterator();
+    	
+    	for(int r = 0; r <= out.size(); r++) {
+	    	while (itn.hasNext() && ito.hasNext()) {
+	    		float input = itn.nextIndex();
+	    		float output = ito.nextIndex();
+	    		
+	    		outputs.add(r, input *= output);
+	    	}
+    	}
         return outputs;
     }}

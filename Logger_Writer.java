@@ -55,12 +55,9 @@ public class Logger_Writer {
 	public static boolean Logger_Checker() {
 		
 		int count = 0;
+		File data_doc = new File("data_doc.txt");
 		
-		if (!data_doc.exists()) {
-			Logger_Creator();
-		}
-		
-		while (data_doc.exists()) {
+		if (data_doc.exists()) {
 			
 			System.err.println("Can output file : " + data_doc.getName() + " is located in directory: " + data_doc.getAbsolutePath() + ".\n");
 			
@@ -99,163 +96,138 @@ public class Logger_Writer {
 	 */
 	public static void Logger_Printer(PrinterState state) throws IOException {
 
-	      try (FileWriter stack = new FileWriter(data_doc)) {
-	    	  Logger_Checker();
-			switch (state) {
-				case CONN:
-					try {
-						Logger_Checker();
-						stack.write("Neural Connections:\n " + Logger_Writer.getConnectionss() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case TOUCH:
-					try {
-						Logger_Checker();
-						stack.write("Touch Proximity Connections:\n " + Logger_Writer.getConnectt() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case GREEN:
-					try {
-						Logger_Checker();
-						stack.write("Green proximity Connections:\n " + Logger_Writer.getConnectg() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case RED:
-					try {
-						Logger_Checker();
-						stack.write("Red proximity Connections:\n " + Logger_Writer.getConnectr() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case MAVOL:
-					try {
-						Logger_Checker();
-						stack.write("The entire mapped volume:\n " + Logger_Writer.getMapped_volume().hashCode() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case SYNAP:
-					try {
-						Logger_Checker();
-						stack.write("Current synaptic:\n" + Logger_Writer.getSynaptic() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case SYNAPS:
-					try {
-						Logger_Checker();
-						stack.write("Current synaptics:\n" + Logger_Writer.getSynaptics() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case TRANSB4:
-					try {
-						Logger_Checker();
-						stack.write("Data fed in before the transpoition:\n" + Logger_Writer.getTranspose_before() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case TRANSFTR:
-					try {
-						Logger_Checker();
-						stack.write("After Transposition of ArrayList:\n" + Logger_Writer.getTranspose_after() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case SITUATION:
-					try {
-						Logger_Checker();
-						stack.write("The new situation to be assessed after training: " + Logger_Writer.getSituation() + ".\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case ADJUSTMENT:
-					try {
-						Logger_Checker();
-						stack.write("Synaptical adjustments made: " + Logger_Writer.getAdjustment() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case TRAINSET:
-					try {
-						Logger_Checker();
-						stack.write("The set to be trained with:\n" + Logger_Writer.getTraining_set() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case ERRORS:
-					try {
-						Logger_Checker();
-						stack.write("Errors before computation of synapse:\n" + Logger_Writer.getErrors() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				case TIME:
-					try {
-						Logger_Checker();
-						stack.write("Time taken (mm.ss.ms) : " + Logger_Writer.getTime() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }
-					break;
-				default:
-					state = PrinterState.VOID;
-					try {
-						Logger_Checker();
-						stack.write("Neuron quantity: " + Simple_Neural_Network.getNeuron_qty() + "\n");
-						stack.write("Training quantity: " + Simple_Neural_Network.getT_qty() + "\n");
-						stack.write("Cubic Volume quantity: " + Simple_Neural_Network.getVol() + "\n");}
-					catch (IOException e) {
-					      System.err.println("An error occurred." + e);
-					      e.printStackTrace();
-					    }					
-					break;
-			}
-			stack.close();
+	    FileWriter stack = new FileWriter("data_doc.txt");
+		switch (state) {
+			case CONN:
+				try {
+					stack.write("Neural Connections:\n " + Logger_Writer.getConnectionss() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case TOUCH:
+				try {
+					stack.write("Touch Proximity Connections:\n " + Logger_Writer.getConnectt() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case GREEN:
+				try {
+					stack.write("Green proximity Connections:\n " + Logger_Writer.getConnectg() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case RED:
+				try {
+					stack.write("Red proximity Connections:\n " + Logger_Writer.getConnectr() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case MAVOL:
+				try {
+					stack.write("The entire mapped volume:\n " + Logger_Writer.getMapped_volume().hashCode() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case SYNAP:
+				try {
+					stack.write("Current synaptic:\n" + Logger_Writer.getSynaptic() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case SYNAPS:
+				try {
+					stack.write("Current synaptics:\n" + Logger_Writer.getSynaptics() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case TRANSB4:
+				try {
+					stack.write("Data fed in before the transpoition:\n" + Logger_Writer.getTranspose_before() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case TRANSFTR:
+				try {
+					stack.write("After Transposition of ArrayList:\n" + Logger_Writer.getTranspose_after() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case SITUATION:
+				try {
+					stack.write("The new situation to be assessed after training: " + Logger_Writer.getSituation() + ".\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case ADJUSTMENT:
+				try {
+					stack.write("Synaptical adjustments made: " + Logger_Writer.getAdjustment() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case TRAINSET:
+				try {
+					stack.write("The set to be trained with:\n" + Logger_Writer.getTraining_set() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case ERRORS:
+				try {
+					stack.write("Errors before computation of synapse:\n" + Logger_Writer.getErrors() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			case TIME:
+				try {
+					stack.write("Time taken (mm.ss.ms) : " + Logger_Writer.getTime() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }
+				break;
+			default:
+				state = PrinterState.VOID;
+				try {
+					stack.write("Neuron quantity: " + Simple_Neural_Network.getNeuron_qty() + "\n");
+					stack.write("Training quantity: " + Simple_Neural_Network.getT_qty() + "\n");
+					stack.write("Cubic Volume quantity: " + Simple_Neural_Network.getVol() + "\n");}
+				catch (IOException e) {
+				      System.err.println("An error occurred." + e);
+				      e.printStackTrace();
+				    }					
+				break;
 		}
+			stack.close();
 	}
 	
-	public static void Logger_Generic(String message) {
-			FileWriter stack;
-			try {
-				stack = new FileWriter(data_doc);
-				Logger_Checker();
-				stack.write(message);
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-		}
+	public static void Logger_Generic(String message) throws IOException {
+			FileWriter stack = new FileWriter("data_doc.txt");
+			stack.write(message);}
 
 	//set the getters and setters
 	public static ArrayList<Object> getConnectionss() {
