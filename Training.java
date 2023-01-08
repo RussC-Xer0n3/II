@@ -30,7 +30,7 @@ public class Training {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
-    	Object a, b;
+    	int a, b;
     	int sum = 0;
     	float a_sum = 0;
     	int t, e, u, r, h, k, q, x;
@@ -60,13 +60,14 @@ public class Training {
         for (t = 0; t <= t_qty; t++) {
         	//here is where we get the think() to consider the float synaptic value as it changes
         	Logger_Writer.Logger_Generic("Beginning to assess the nucleus output in the think method: " + synaptic + "\n");
-            for (e = 0; e < output.size(); e++) {
-            	a = loaded.get(e);
-            	b = output.get(e);
+            for (e = 0; e < output.size()-1; e++) {
+            	for (int hh = 0; hh <= loaded.size()-1; hh++) {
+            		a = (int) loaded.get(hh);
+            		b = (int) output.get(e);
 
-            	if (a == b) {
-            		sum += 1;}}
-
+	            	if (a == b) {
+	            		sum += 1;}}
+	            	}
             error.add(((output.size()-1 - sum) / 100) * output.size()-1);
             Logger_Writer.setErrors(error);
             Logger_Writer.Logger_Printer(PrinterState.ERRORS);}     
@@ -78,30 +79,45 @@ public class Training {
             inputsY = (Integer) error.get(q);
             for(r = 0; r < sds.size()-1; r++) {
             	sigdiv = (Integer) sds.get(r);
-                mplex.add(r, inputsY *= sigdiv);}}
+            	double m = inputsY *= sigdiv;
+            	if (m == 0.0) {
+            		m = 1;
+            	} else if (m == -0.0) {
+            		m = -1;
+            	}
+                mplex.add(m);}}
+        //surmise them
+        double sumun = 0.0;
+        for (int y = 0; y <= mplex.size()-1; y++) {
+        	double un = (Double) mplex.get(y);
+        	sumun += un;
+        }
+        sumun /= mplex.size()-1;
+        mplex.clear();
+        mplex.add(sumun);
         
+        System.err.println("sig div: " + sds);
+        System.err.println("mplex of sig div" + mplex);
         Logger_Writer.Logger_Generic("The sigmoid derivatives are: " + sds + "\n");
-        sds.clear();
-        error.clear();
-
+        
+        
         //Get a dot product of the matrix transposition and the error multiples of the sigmoid derivatives
-    	for (h = 0; h <= output.size(); t++) {adjustment.add(Dot.dot(Transpose.transpose(training), mplex));}
+        ArrayList<Object> m = new ArrayList<>(Dot.dot(mplex, Transpose.transpose(training)));
+    	adjustment.add(m);
 
+    	System.err.println("The multiples of the errors to sigmoid derivatives are: " + mplex);
     	Logger_Writer.Logger_Generic("The multiples of the errors to sigmoid derivatives are: " + mplex + "\n");
-    	mplex.clear();
 
-    	//Take the adjustment values and summise them ready for mean average
-    	for(k = 0; k < adjustment.size(); k++) {
-            inputsN = (float) adjustment.get(k);
-            for(u = 0; u < adjustment.size(); u++) {
-            	inputsA = inputsN;
-            	a_sum += inputsA;}}
+    	//Take the adjustment values and surmise them ready for mean average
+    	for(k = 0; k <= adjustment.size()-1; k++) {
+    		a_sum += adjustment.indexOf(k);}
 
     	Logger_Writer.Logger_Generic("The adjustment sum before adjustment is: " + a_sum);
     	Logger_Writer.setAdjustment(a_sum);
         Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
         
     	a_sum /= adjustment.size();
+    	System.err.println("The adjustment sum after adjustment is: " + a_sum);
     	Logger_Writer.Logger_Generic("The adjustment sum after adjustment is: " + a_sum);
     	Logger_Writer.setAdjustment(a_sum);
         Logger_Writer.Logger_Printer(PrinterState.ADJUSTMENT);
@@ -113,7 +129,7 @@ public class Training {
     	
     	Logger_Writer.setSynaptic(synaptic);
     	Logger_Writer.Logger_Generic("Final synaptic output  from nucleus is: " + synaptic + "\n");
-        System.err.println("New Synaptics: " + synaptic + "\n");
+        System.err.println("New Synaptics: " + synaptic);
         Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 
         //create an ArrayList and a boolean
@@ -123,7 +139,7 @@ public class Training {
         //Get current ID in the indices
         int myID = identifier;
         //Making a synaptical load and output Axiom to other neurons
-        for (x = 0; x < Simple_Neural_Network.getConnectionss().size(); x++) {
+        for (x = 0; x < Simple_Neural_Network.getConnectionss().size()-1; x++) {
         	if (conn && ((conns.get(x) == Simple_Neural_Network.getConnectionss() && myID == x))) {
         		return synaptic;
         	} else {
