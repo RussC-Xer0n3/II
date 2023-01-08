@@ -15,25 +15,19 @@ public class Dot {
     public static ArrayList<Object> dot (ArrayList<Object> in, ArrayList<Object> out) {
     	System.err.println("Dot Product Hit");
     	ArrayList<Object> outputs = new ArrayList<>();
-
-    	ListIterator<Object> itn = in.listIterator();
-    	System.err.println("In: " + in);
-    	ListIterator<Object> ito = out.listIterator();
-    	System.err.println("Out: " + out);
     	
     	float e = 0;
     	
     	for (int r = 0; r <= out.size()-1; r++) {
     		float d = (float) out.get(r);
-    		e = e + d;
+    		e += d;
     	}
     	
-    	float sum = e / out.size();
+    	float sum = e / out.size()-1;
     	
     	for(int r = 0; r <= in.size()-1; r++) {
-	    		float z = sum;
 	    		int o = (Integer) in.get(r);
-	    		outputs.add(o *= z);
+	    		outputs.add(o *= sum);
 	    }
     	
     	System.err.println("DotProd Outputs: " + outputs);

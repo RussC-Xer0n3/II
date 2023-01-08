@@ -29,7 +29,7 @@ public class Transpose {
         	ArrayList<Object> temp = new ArrayList<>();
         	temp.add(arrayList.get(i));
 
-            for (j = 0; j < temp.size(); j++) {
+            for (j = 0; j < temp.size()-1; j++) {
                 ArrayList<Object> transpose_row = new ArrayList<>();
                 transpose_row.add(temp.get(i));
                 transpose.set(j, transpose_row.get(0));

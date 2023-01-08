@@ -74,10 +74,10 @@ public class Training {
         sum = 0;
 
         //Get sigmoid derivatives of the errors
-        for(q = 0; q < error.size(); q++) {
-            inputsY = (float) error.get(q);
-            for(r = 0; r < sds.size(); r++) {
-            	sigdiv = (float) sds.get(r);
+        for(q = 0; q < error.size()-1; q++) {
+            inputsY = (Integer) error.get(q);
+            for(r = 0; r < sds.size()-1; r++) {
+            	sigdiv = (Integer) sds.get(r);
                 mplex.add(r, inputsY *= sigdiv);}}
         
         Logger_Writer.Logger_Generic("The sigmoid derivatives are: " + sds + "\n");

@@ -12,10 +12,10 @@ public class Sigmoid_derivative {
 
     	ArrayList<Object> derivative = new ArrayList<>();
 
-    	for(int i = 0; i <= output.size(); i++) {
-    		float a = (float) output.get(i);
+    	for(int i = 0; i <= output.size()-1; i++) {
+    		int a = (int) output.get(i);
     		derivative.add(a * (1 - a));}
-
+    	System.err.println(derivative);
     	return derivative;}
 
 }
