@@ -13,10 +13,10 @@ public class Sigmoid {
 
     	ArrayList<Object> adjusted = new ArrayList<>();
 
-    	for(int i = 0; i <= x.size(); i++) {
-    		float a = (float) x.get(i);
+    	for(int i = 0; i <= x.size()-1; i++) {
+    		int a = (Integer) x.get(i);
     		adjusted.add(1 / (1 * (-a)));}
-
+    	System.err.println("Adjusted Sigmoid:" + adjusted);
     	return adjusted;}
 	
 }

@@ -15,8 +15,8 @@ public class Situation {
 
         Random num = new Random();
 
-        for (int y = 0; y <= 5; y++) {
-        	int a = num.nextInt(1);
+        for (int y = 0; y <= 4; y++) {
+        	int a = num.nextInt(2);
             situation.add(a);}
 
         return situation;}

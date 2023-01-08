@@ -19,12 +19,22 @@ public class Neuron {
 	 * @throws IOException 
      */
     public static ArrayList<Object> neuron () throws IOException {
-
         ArrayList<Object> neuron = new ArrayList<>();
+        float zion = Simple_Neural_Network.getSynaptic();
         
-        neuron.add(Training.training(Simple_Neural_Network.getSynaptic()));
+        System.err.println("Synaptic" + zion);
+        
+        Training nucleus = new Training();
+        
+        System.err.println("Instantiated");
+        
+        neuron.add(nucleus.training(zion));
+        System.err.println("nucleus added");
         neuron.add(Touch.t());
+        System.err.println("Touch Proximity added");
         neuron.add(Green.g());
+        System.err.println("Green proximity added");
         neuron.add(Red.r());
-        System.err.println(neuron);
+        System.err.println("Red proximity added");
+        System.err.println("Neuron built!");
         return neuron;}}

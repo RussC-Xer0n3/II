@@ -227,7 +227,8 @@ public class Logger_Writer {
 	
 	public static void Logger_Generic(String message) throws IOException {
 			FileWriter stack = new FileWriter("data_doc.txt");
-			stack.write(message);}
+			stack.write(message);
+			stack.close();}
 
 	//set the getters and setters
 	public static ArrayList<Object> getConnectionss() {

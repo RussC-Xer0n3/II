@@ -79,6 +79,7 @@ public class Cubic_Mapping_4 {
 	 */
 	@SuppressWarnings("unchecked")
 	public static Map<Integer, ArrayList<Object>> mapping(ArrayList<Object> neuron, int qty, int n) throws IOException {
+		System.err.println("Hit mapping properly");
 		int j, k, l, i;
 
 		double v = Math.pow(n, 3);
@@ -111,6 +112,4 @@ public class Cubic_Mapping_4 {
 		map.clear();
 		c.clear();
 	}
-
-	public static Map<Integer, ArrayList<Object>> main(String[] args) { return map; }
 }

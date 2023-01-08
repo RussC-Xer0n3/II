@@ -5,6 +5,8 @@ package javatestfiles;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Random;
@@ -69,7 +71,8 @@ public class Simple_Neural_Network {
      * @param args
      * @throws IOException 
      */
-    public static void main (String []args) throws IOException {
+    @SuppressWarnings("unchecked")
+	public static void main (String []args) throws IOException {
     	Logger_Writer.Logger_Creator();
     	synaptics.addAll(Synaptics.synaptics());
     	
@@ -81,7 +84,7 @@ public class Simple_Neural_Network {
 		Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 		Logger_Writer.Logger_Printer(PrinterState.SITUATION);
 		
-		Map<Integer, ArrayList<Object>> volume = Mapped_volume.mapped_volume(neuron_qty, vol);
+		Map<Integer, ArrayList<Object>> volume = new HashMap<>(Cubic_Mapping_4.mapping(Neuron.neuron(), neuron_qty, vol));
 		System.err.println("Hey" + volume.hashCode());
 
 		Logger_Writer.setMapped_volume(volume);
@@ -90,8 +93,6 @@ public class Simple_Neural_Network {
 		ArrayList<Object> connections = new ArrayList<>(Connections.connections(volume));
 		Logger_Writer.setConnectionss(connections);
 		Logger_Writer.Logger_Printer(PrinterState.CONN);
-		
-		ArrayList<ArrayList<Object>> data = new ArrayList<>();
 
 		for (Entry<Integer, ArrayList<Object>> be : volume.entrySet()) {
 			System.err.println("Volume Key: " + be.getKey() + " Volume Value: " + be.getValue() + ".\n");
@@ -100,32 +101,28 @@ public class Simple_Neural_Network {
 		System.err.print("HashCode : " + volume.hashCode());
 		System.err.println("The neuron Matrices are: \n" + volume);
 		System.err.println("The Neurological connections are: \n" + connections);
-
-		data.add((ArrayList<Object>) connections);
-		data.add((ArrayList<Object>) volume);
-		
-		Logger_Writer.Logger_Generic("Connections and Neurologically Mapped Volume respectively: \n " + data.get(0) + "\n" + data.get(1) + "\n");
-		System.err.println("Complete data stream from connections and volume mapped: " + data + ".\n");
 		
 		//Activate the training module in each neuron
 		for (Entry<Integer, ArrayList<Object>> activate : volume.entrySet()) {
 			ArrayList<Object> neurological = new ArrayList<>(activate.getValue());
 			
 			for (int a = 0; a <= neurological.size(); a++) {
+				neurological.get(3);
+				neurological.get(2);
+				neurological.get(1);
 				neurological.get(0);
 				System.err.println("Neuron: " + activate.getKey() + " - Activated!\n");
 			}
 		}
 		
 		System.err.println("Activated Neurons.\n");
-		Logger_Writer.Logger_Generic("The mapped volume and it's connections are:\n" + data);
-    	
         Think.think(situation);
         System.err.println("Considering new situation: " + situation + "\n");
         Logger_Writer.Logger_Generic("Considering new situation: " + situation + "\n");
         
         return;
     }
+    
 
     public static int getNeuron_qty() {
 		return neuron_qty;

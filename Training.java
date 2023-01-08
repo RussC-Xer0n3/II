@@ -25,7 +25,8 @@ public class Training {
      * @throws IOException 
      */
     @SuppressWarnings("unused")
-	public static float training(float synaptic) throws IOException {
+	public float training(float synaptic) throws IOException {
+    	System.err.println("Training hit");
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
@@ -41,15 +42,21 @@ public class Training {
     	if (synaptics == 0) {
     		synaptics = Simple_Neural_Network.getSynaptic();
     	}
+    	
+    	System.err.println("Synaptic is" + synaptics);
 
         ArrayList<Object> error = new ArrayList<>();
         ArrayList<Object> mplex = new ArrayList<>();
         ArrayList<Object> adjustment = new ArrayList<>();
         ArrayList<Object> loaded = new ArrayList<>(Situation.situation());
+        System.err.println("Loaded: " + loaded);
         ArrayList<Object> training = new  ArrayList<>(Training_Set.training_set());
+        System.err.println("Training set: " + training);
         ArrayList<Object> output = Think.think(training);
+        System.err.println("Output from think: " + output);
         ArrayList<Object> sds = new ArrayList<>(Sigmoid_derivative.sigmoid_derivative(output));
-
+        System.err.println("Sigmoid derivatives are: " + sds);
+        
         for (t = 0; t <= t_qty; t++) {
         	//here is where we get the think() to consider the float synaptic value as it changes
         	Logger_Writer.Logger_Generic("Beginning to assess the nucleus output in the think method: " + synaptic + "\n");
@@ -63,7 +70,7 @@ public class Training {
             error.add(((output.size()-1 - sum) / 100) * output.size()-1);
             Logger_Writer.setErrors(error);
             Logger_Writer.Logger_Printer(PrinterState.ERRORS);}     
-
+        System.err.println("Sum of errors is:" + sum);
         sum = 0;
 
         //Get sigmoid derivatives of the errors
