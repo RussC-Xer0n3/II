@@ -39,20 +39,19 @@ import java.util.Random;
 
 public class Simple_Neural_Network {
 
-    private static int t_qty = 10000;
-    private static int neuron_qty = 32;
-    private static int vol = 4;
+    private static int t_qty = 0;
+    private static int neuron_qty = 0;
+    private static int vol = 0;
 	
 	//Set the list of synaptical values to choose from
     private static ArrayList<Object> synaptics = new ArrayList<>();
-    
-    //Get a new situation to be looked at
+    private static ArrayList<Object> connections = new ArrayList<>();
+    private static Map<Integer, ArrayList<Object>> volume = new HashMap<>();
+
+	//Get a new situation to be looked at
     static ArrayList<Object> situation = Situation.situation();
     static ArrayList<Object> neuron = new ArrayList<>();
     
-    public static ArrayList<Object> getSynaptics() {
-    	return synaptics;
-    }
     //Randomise the selection of a synaptic value from the list
     public static float getSynaptic() {
     	
@@ -84,13 +83,26 @@ public class Simple_Neural_Network {
 		Logger_Writer.Logger_Printer(PrinterState.SYNAP);
 		Logger_Writer.Logger_Printer(PrinterState.SITUATION);
 		
-		Map<Integer, ArrayList<Object>> volume = new HashMap<>(Cubic_Mapping_4.mapping(Neuron.neuron(), neuron_qty, vol));
-		System.err.println("Hey" + volume.hashCode());
-
+		/**
+		 * ######################################################
+		 * for the gui
+		 * ######################################################
+		 */
+		Simple_Neural_Network.setNeuron_qty(32);
+		Simple_Neural_Network.setT_qty(10000);
+		Simple_Neural_Network.setVol(4);
+		Simple_Neural_Network.setNeuron(Neuron.neuron());
+		
+		
+		Simple_Neural_Network.setVolume(Cubic_Mapping_4.mapping(Simple_Neural_Network.getNeuron(), Simple_Neural_Network.getNeuron_qty(), Simple_Neural_Network.getVol()));
+		
+		System.err.println("Mapped Volume: " + volume.hashCode());
 		Logger_Writer.setMapped_volume(volume);
 		Logger_Writer.Logger_Printer(PrinterState.MAVOL);
+				
+		Simple_Neural_Network.setConnections(Connections.connections(Simple_Neural_Network.getVolume()));
 		
-		ArrayList<Object> connections = new ArrayList<>(Connections.connections(volume));
+		System.err.println("Connections: " + connections);
 		Logger_Writer.setConnectionss(connections);
 		Logger_Writer.Logger_Printer(PrinterState.CONN);
 
@@ -98,23 +110,18 @@ public class Simple_Neural_Network {
 			System.err.println("Volume Key: " + be.getKey() + " Volume Value: " + be.getValue() + ".\n");
 		}
 
-		System.err.print("HashCode : " + volume.hashCode());
-		System.err.println("The neuron Matrices are: \n" + volume);
-		System.err.println("The Neurological connections are: \n" + connections);
-		
 		//Activate the training module in each neuron
 		for (Entry<Integer, ArrayList<Object>> activate : volume.entrySet()) {
-			ArrayList<Object> neurological = new ArrayList<>(activate.getValue());
+			//ArrayList<Object> neurological = new ArrayList<>(activate.getKey());
+			activate.getValue().get(3);
+			activate.getValue().get(2);
+			activate.getValue().get(1);
+			activate.getValue().get(0);
 			
-			for (int a = 0; a <= neurological.size(); a++) {
-				neurological.get(3);
-				neurological.get(2);
-				neurological.get(1);
-				neurological.get(0);
-				System.err.println("Neuron: " + activate.getKey() + " - Activated!\n");
-			}
+			System.err.println("Neuron: " + activate.getValue() + " - Activated!\n");
 		}
 		
+	
 		System.err.println("Activated Neurons.\n");
         Think.think(situation);
         System.err.println("Considering new situation: " + situation + "\n");
@@ -148,8 +155,43 @@ public class Simple_Neural_Network {
 		Simple_Neural_Network.t_qty = t_qty;
 	}
     
-	public static ArrayList<Object> getConnectionss() {
-		// TODO Auto-generated method stub
-		return null;
+	public static ArrayList<Object> getConnections() {
+		return connections;
+	}
+	
+	public static void setConnections(ArrayList<Object> connections) {
+		Simple_Neural_Network.connections = connections;
+	}
+	
+	public static ArrayList<Object> getSituation() {
+		return situation;
+	}
+	
+	public static void setSituation(ArrayList<Object> situation) {
+		Simple_Neural_Network.situation = situation;
+	}
+	
+	public static ArrayList<Object> getNeuron() {
+		return neuron;
+	}
+	
+	public static void setNeuron(ArrayList<Object> neuron) {
+		Simple_Neural_Network.neuron = neuron;
+	}
+	
+	public static void setSynaptics(ArrayList<Object> synaptics) {
+		Simple_Neural_Network.synaptics = synaptics;
+	}
+	
+	public static ArrayList<Object> getSynaptics() {
+    	return synaptics;
+    }
+	
+	public static Map<Integer, ArrayList<Object>> getVolume() {
+		return volume;
+	}
+
+	public static void setVolume(Map<Integer, ArrayList<Object>> volume) {
+		Simple_Neural_Network.volume = volume;
 	}
 }

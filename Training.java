@@ -7,7 +7,7 @@ public class Training {
 
 	private static int identifier = 0;
 	
-	public int getIdentifier() {
+	public static int getIdentifier() {
 		return identifier;
 	}
 	
@@ -131,21 +131,12 @@ public class Training {
     	Logger_Writer.Logger_Generic("Final synaptic output  from nucleus is: " + synaptic + "\n");
         System.err.println("New Synaptics: " + synaptic);
         Logger_Writer.Logger_Printer(PrinterState.SYNAP);
-
-        //create an ArrayList and a boolean
-        ArrayList<Object> conns = Simple_Neural_Network.getConnectionss();
-        boolean conn = Simple_Neural_Network.getConnectionss() != null;
         
         //Get current ID in the indices
         int myID = identifier;
-        //Making a synaptical load and output Axiom to other neurons
-        for (x = 0; x < Simple_Neural_Network.getConnectionss().size()-1; x++) {
-        	if (conn && ((conns.get(x) == Simple_Neural_Network.getConnectionss() && myID == x))) {
-        		return synaptic;
-        	} else {
-        		return myID;
-        	}
-        }
+        
+        Distribute.send_synaptic();
+        
         return synaptic;
     }
 	

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.Map.Entry;
 
 /**
  * The purpose of the class is to map a cubic calculation to
@@ -57,15 +58,18 @@ public class Cubic_Mapping_4 {
 	 * @throws IOException 
 	 */
 	public static void populate(ArrayList<Object> neuron, int qty, double v) throws IOException {
-		System.err.println("Hit populate");
+		System.err.println("Populating");
 		Random rand = new Random();
 
 		int i;
 
 		for (i = 0; i <= qty; i++) { int m = rand.nextInt((int) v); Training.setIdentifier(m); map.put(m, neuron); 
 		
-		System.err.print("Original mapping after first generation: " + map.hashCode());
-		Logger_Writer.Logger_Generic("Original mapping after first generation: " + map.hashCode());}}
+		System.err.print("Original mapping after first generation: " + map.hashCode() + "\n");
+		Logger_Writer.Logger_Generic("Original mapping after first generation: " + map.hashCode() + "\n");}
+		Simple_Neural_Network.setVolume(map);
+		Distribute.send_synaptic();
+	}
 
 	/**
 	 * Maps the cubic index length to the ArrayList c and calls the populate()
@@ -79,25 +83,30 @@ public class Cubic_Mapping_4 {
 	 */
 	@SuppressWarnings("unchecked")
 	public static Map<Integer, ArrayList<Object>> mapping(ArrayList<Object> neuron, int qty, int n) throws IOException {
-		System.err.println("Hit mapping properly");
 		int j, k, l, i;
 
-		double v = Math.pow(n, 3);
+		int v = (int) Math.pow(n, 3);
 
-		ArrayList<ArrayList<ArrayList<Object>>> c = Cubic_Mapping_4.three_d_list(n);
-		System.err.println("Hey" + c + "c is the three d list");
+		System.err.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + v + "\n");
+		Logger_Writer.Logger_Generic("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + v + "\n");
 
-		System.err.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
-		Logger_Writer.Logger_Generic("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + n + "\n");
-		
-		for (j = 0; j < n; j++) {
+		ArrayList<ArrayList<ArrayList<Object>>> c = Cubic_Mapping_4.three_d_list(v);
+		System.err.println(c + " is the three d list of " + v + "indices");
+
+		/**
+		for (j = 0; j <= v; j++) {
+			map.put(j, (ArrayList<Object>) c.get(j).get(j).get(j));
+		}
+		*/
+		/**
+		for (j = 0; j < v; j++) {
 			for (k = 0; k < n; k++) {
 				for(l = 0; l < n; l++) {
 					c.get(j).get(k).add(l);
 					for (i = 0; i < v; i++) {
 						map.put(i, (ArrayList<Object>) c.get(j).get(k).get(l));
 					}}}}
-		System.err.println("Hey Map" + map.hashCode());
+					*/
 		Cubic_Mapping_4.populate(neuron, qty, v);
 
 		return map;}
