@@ -35,7 +35,7 @@ public class Connections {
     				
     				System.err.println("n.value: " + n.get(v));
     				
-    				if (n.get(1) == Touch.t()) {
+    				if (n.get(1) == be.getKey()) {
     					ArrayList<ArrayList<Object>> value = new ArrayList<>();
 
     					connectt.add(new ArrayList<Object>(be.getValue()));
@@ -48,7 +48,7 @@ public class Connections {
     					connectt.clear();
     					value.clear();
     					
-    				} else if (n.get(2) == Green.g()) {
+    				} else if (n.get(2) == be.getKey()) {
     					ArrayList<ArrayList<Object>> value2 = new ArrayList<>();
     					
     					connectg.add(new ArrayList<Object>(be.getValue()));
@@ -61,7 +61,7 @@ public class Connections {
     					connectg.clear();
     					value2.clear();
     					
-    				} else if (n.get(3) == Red.r()){
+    				} else if (n.get(3) == be.getKey()){
     					ArrayList<ArrayList<Object>> value3 = new ArrayList<>();
     					
     					connectr.add(new ArrayList<Object>(be.getValue()));
