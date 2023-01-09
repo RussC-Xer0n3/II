@@ -62,13 +62,22 @@ public class Cubic_Mapping_4 {
 		Random rand = new Random();
 
 		int i;
-
+		ArrayList<Object> connections = new ArrayList<>();
+		
 		for (i = 0; i <= qty; i++) { int m = rand.nextInt((int) v); Training.setIdentifier(m); map.put(m, neuron); 
 		
 		System.err.print("Original mapping after first generation: " + map.hashCode() + "\n");
 		Logger_Writer.Logger_Generic("Original mapping after first generation: " + map.hashCode() + "\n");}
 		Simple_Neural_Network.setVolume(map);
-		Distribute.send_synaptic();
+		
+		for (Entry<Integer, ArrayList<Object>> be : map.entrySet()) {
+			System.err.println("Mapped Volume keys: " + be.getKey() + "\tValues: " + be.getValue());
+		}
+		
+		System.err.println("Need to work out how to connect them now (via Connections()), sending mapped volume to method..... back to the drawing board!!");
+		
+		connections = Distribute.send_synaptic(map);
+		Simple_Neural_Network.setConnections(connections);
 	}
 
 	/**

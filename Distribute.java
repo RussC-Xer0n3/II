@@ -1,20 +1,17 @@
 package javatestfiles;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
 public class Distribute {
 
-	public static void send_synaptic () {
-		int x;
+	public static ArrayList<Object> send_synaptic (Map<Integer, ArrayList<Object>> volume) throws IOException {
+		ArrayList<Object> conns = new ArrayList<>();
 		
-		ArrayList<Object> conns = new ArrayList<>(Simple_Neural_Network.getConnections());
-		int myID = Training.getIdentifier();
+		conns.addAll(Connections.connections(volume));
 		
-		
-        for (x = 0; x < Simple_Neural_Network.getConnections().size()-1; x++) {
-        	
-        }
+		return conns;
 	}
 	
 }

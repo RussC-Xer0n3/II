@@ -31,9 +31,11 @@ public class Connections {
     		
     		while (be.getValue() != null) {
     			
-    			for (int v = 0; v <= n.size(); v++) {
+    			for (int v = 0; v <= n.size()-1; v++) {
     				
-    				if (((ArrayList<Object>) n.get(1)).contains(be.getValue())) {
+    				System.err.println("n.value: " + n.get(v));
+    				
+    				if (n.get(1) == Touch.t()) {
     					ArrayList<ArrayList<Object>> value = new ArrayList<>();
 
     					connectt.add(new ArrayList<Object>(be.getValue()));
@@ -46,7 +48,7 @@ public class Connections {
     					connectt.clear();
     					value.clear();
     					
-    				} else if (((ArrayList<Object>) n.get(2)).contains(be.getValue())) {
+    				} else if (n.get(2) == Green.g()) {
     					ArrayList<ArrayList<Object>> value2 = new ArrayList<>();
     					
     					connectg.add(new ArrayList<Object>(be.getValue()));
@@ -59,7 +61,7 @@ public class Connections {
     					connectg.clear();
     					value2.clear();
     					
-    				} else if (((ArrayList<Object>) n.get(3)).contains(be.getValue())){
+    				} else if (n.get(3) == Red.r()){
     					ArrayList<ArrayList<Object>> value3 = new ArrayList<>();
     					
     					connectr.add(new ArrayList<Object>(be.getValue()));

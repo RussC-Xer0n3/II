@@ -135,9 +135,14 @@ public class Training {
         //Get current ID in the indices
         int myID = identifier;
         
-        Distribute.send_synaptic();
+        ArrayList<Object> c = new ArrayList<>(Simple_Neural_Network.getConnections());
         
-        return synaptic;
+        for (x = 0; x <= c.size()-1; x++) {
+        	while (c.contains(myID) && x == myID) {        		
+        		return synaptic;
+        	}
+        }
+		return synaptic;
     }
 	
 }

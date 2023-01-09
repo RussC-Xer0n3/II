@@ -73,37 +73,30 @@ public class Simple_Neural_Network {
     @SuppressWarnings("unchecked")
 	public static void main (String []args) throws IOException {
     	Logger_Writer.Logger_Creator();
+    	/**
+    	 * ######################################################
+    	 * for the gui
+    	 * ######################################################
+    	 */
+    	Simple_Neural_Network.setNeuron_qty(32);
+    	Simple_Neural_Network.setT_qty(10000);
+    	Simple_Neural_Network.setVol(4);
     	synaptics.addAll(Synaptics.synaptics());
+    	Synaptics.setNeuron(Simple_Neural_Network.getNeuron_qty());
+    	Simple_Neural_Network.setNeuron(Neuron.neuron());
+    	Simple_Neural_Network.setVolume(Cubic_Mapping_4.mapping(Simple_Neural_Network.getNeuron(), Simple_Neural_Network.getNeuron_qty(), Simple_Neural_Network.getVol()));
+    	Simple_Neural_Network.setConnections(Connections.connections((Map<Integer, ArrayList<Object>>) Distribute.send_synaptic(Simple_Neural_Network.getVolume())));
     	
-    	Synaptics.setNeuron(neuron_qty);
-		
 		Logger_Writer.setSynaptics(synaptics);
 		Logger_Writer.setSituation(situation);
 		Logger_Writer.Logger_Printer(PrinterState.VOID);
 		Logger_Writer.Logger_Printer(PrinterState.SYNAP);
-		Logger_Writer.Logger_Printer(PrinterState.SITUATION);
-		
-		/**
-		 * ######################################################
-		 * for the gui
-		 * ######################################################
-		 */
-		Simple_Neural_Network.setNeuron_qty(32);
-		Simple_Neural_Network.setT_qty(10000);
-		Simple_Neural_Network.setVol(4);
-		Simple_Neural_Network.setNeuron(Neuron.neuron());
-		
-		
-		Simple_Neural_Network.setVolume(Cubic_Mapping_4.mapping(Simple_Neural_Network.getNeuron(), Simple_Neural_Network.getNeuron_qty(), Simple_Neural_Network.getVol()));
-		
-		System.err.println("Mapped Volume: " + volume.hashCode());
-		Logger_Writer.setMapped_volume(volume);
-		Logger_Writer.Logger_Printer(PrinterState.MAVOL);
-				
-		Simple_Neural_Network.setConnections(Connections.connections(Simple_Neural_Network.getVolume()));
-		
-		System.err.println("Connections: " + connections);
-		Logger_Writer.setConnectionss(connections);
+		Logger_Writer.Logger_Printer(PrinterState.SITUATION);		
+		System.err.println("Mapped Volume: " + Simple_Neural_Network.getVolume().hashCode());
+		Logger_Writer.setMapped_volume(Simple_Neural_Network.getVolume());
+		Logger_Writer.Logger_Printer(PrinterState.MAVOL);		
+		System.err.println("Connections: " + Simple_Neural_Network.getConnections());
+		Logger_Writer.setConnectionss(Simple_Neural_Network.getConnections());
 		Logger_Writer.Logger_Printer(PrinterState.CONN);
 
 		for (Entry<Integer, ArrayList<Object>> be : volume.entrySet()) {
