@@ -1,0 +1,1433 @@
+New Synaptic Value is: -9917.117
+Final synaptic output  from nucleus is: -9917.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007939741777]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9918.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9918.117
+Final synaptic output  from nucleus is: -9918.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007938941213]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9919.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9919.117
+Final synaptic output  from nucleus is: -9919.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007938140811]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9920.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9920.117
+Final synaptic output  from nucleus is: -9920.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000793734057]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9921.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9921.117
+Final synaptic output  from nucleus is: -9921.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007936540492]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9922.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9922.117
+Final synaptic output  from nucleus is: -9922.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007935740574]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9923.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9923.117
+Final synaptic output  from nucleus is: -9923.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007934940817]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9924.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9924.117
+Final synaptic output  from nucleus is: -9924.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007934141222]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9925.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9925.117
+Final synaptic output  from nucleus is: -9925.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000793334179]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9926.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9926.117
+Final synaptic output  from nucleus is: -9926.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007932542516]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9927.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9927.117
+Final synaptic output  from nucleus is: -9927.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007931743402]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9928.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9928.117
+Final synaptic output  from nucleus is: -9928.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007930944454]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9929.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9929.117
+Final synaptic output  from nucleus is: -9929.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007930145661]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9930.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9930.117
+Final synaptic output  from nucleus is: -9930.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007929347034]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9931.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9931.117
+Final synaptic output  from nucleus is: -9931.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007928548564]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9932.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9932.117
+Final synaptic output  from nucleus is: -9932.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007927750256]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9933.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9933.117
+Final synaptic output  from nucleus is: -9933.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000792695211]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9934.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9934.117
+Final synaptic output  from nucleus is: -9934.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007926154126]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9935.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9935.117
+Final synaptic output  from nucleus is: -9935.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007925356298]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9936.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9936.117
+Final synaptic output  from nucleus is: -9936.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007924558633]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9937.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9937.117
+Final synaptic output  from nucleus is: -9937.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007923761129]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9938.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9938.117
+Final synaptic output  from nucleus is: -9938.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007922963785]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9939.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9939.117
+Final synaptic output  from nucleus is: -9939.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007922166601]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9940.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9940.117
+Final synaptic output  from nucleus is: -9940.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007921369578]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9941.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9941.117
+Final synaptic output  from nucleus is: -9941.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007920572716]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9942.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9942.117
+Final synaptic output  from nucleus is: -9942.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007919776014]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9943.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9943.117
+Final synaptic output  from nucleus is: -9943.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000791897947]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9944.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9944.117
+Final synaptic output  from nucleus is: -9944.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007918183089]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9945.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9945.117
+Final synaptic output  from nucleus is: -9945.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007917386868]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9946.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9946.117
+Final synaptic output  from nucleus is: -9946.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007916590805]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9947.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9947.117
+Final synaptic output  from nucleus is: -9947.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007915794903]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9948.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9948.117
+Final synaptic output  from nucleus is: -9948.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007914999164]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9949.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9949.117
+Final synaptic output  from nucleus is: -9949.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000791420358]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9950.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9950.117
+Final synaptic output  from nucleus is: -9950.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007913408158]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9951.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9951.117
+Final synaptic output  from nucleus is: -9951.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007912612898]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9952.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9952.117
+Final synaptic output  from nucleus is: -9952.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007911817794]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9953.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9953.117
+Final synaptic output  from nucleus is: -9953.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007911022853]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9954.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9954.117
+Final synaptic output  from nucleus is: -9954.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007910228072]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9955.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9955.117
+Final synaptic output  from nucleus is: -9955.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007909433447]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9956.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9956.117
+Final synaptic output  from nucleus is: -9956.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007908638985]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9957.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9957.117
+Final synaptic output  from nucleus is: -9957.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007907844679]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9958.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9958.117
+Final synaptic output  from nucleus is: -9958.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007907050535]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9959.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9959.117
+Final synaptic output  from nucleus is: -9959.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007906256552]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9960.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9960.117
+Final synaptic output  from nucleus is: -9960.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007905462726]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9961.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9961.117
+Final synaptic output  from nucleus is: -9961.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007904669061]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9962.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9962.117
+Final synaptic output  from nucleus is: -9962.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007903875556]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9963.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9963.117
+Final synaptic output  from nucleus is: -9963.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007903082206]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9964.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9964.117
+Final synaptic output  from nucleus is: -9964.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007902289019]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9965.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9965.117
+Final synaptic output  from nucleus is: -9965.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000790149599]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9966.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9966.117
+Final synaptic output  from nucleus is: -9966.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000790070312]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9967.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9967.117
+Final synaptic output  from nucleus is: -9967.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000789991041]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9968.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9968.117
+Final synaptic output  from nucleus is: -9968.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000789911786]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9969.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9969.117
+Final synaptic output  from nucleus is: -9969.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007898325466]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9970.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9970.117
+Final synaptic output  from nucleus is: -9970.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007897533233]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9971.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9971.117
+Final synaptic output  from nucleus is: -9971.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007896741158]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9972.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9972.117
+Final synaptic output  from nucleus is: -9972.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007895949242]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9973.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9973.117
+Final synaptic output  from nucleus is: -9973.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007895157486]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9974.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9974.117
+Final synaptic output  from nucleus is: -9974.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007894365888]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9975.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9975.117
+Final synaptic output  from nucleus is: -9975.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007893574447]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9976.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9976.117
+Final synaptic output  from nucleus is: -9976.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007892783168]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9977.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9977.117
+Final synaptic output  from nucleus is: -9977.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007891992045]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9978.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9978.117
+Final synaptic output  from nucleus is: -9978.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000789120108]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9979.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9979.117
+Final synaptic output  from nucleus is: -9979.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007890410276]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9980.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9980.117
+Final synaptic output  from nucleus is: -9980.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007889619628]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9981.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9981.117
+Final synaptic output  from nucleus is: -9981.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000788882914]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9982.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9982.117
+Final synaptic output  from nucleus is: -9982.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007888038812]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9983.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9983.117
+Final synaptic output  from nucleus is: -9983.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007887248639]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9984.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9984.117
+Final synaptic output  from nucleus is: -9984.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007886458626]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9985.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9985.117
+Final synaptic output  from nucleus is: -9985.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007885668772]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9986.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9986.117
+Final synaptic output  from nucleus is: -9986.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007884879074]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9987.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9987.117
+Final synaptic output  from nucleus is: -9987.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007884089536]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9988.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9988.117
+Final synaptic output  from nucleus is: -9988.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007883300157]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9989.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9989.117
+Final synaptic output  from nucleus is: -9989.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007882510933]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9990.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9990.117
+Final synaptic output  from nucleus is: -9990.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000788172187]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9991.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9991.117
+Final synaptic output  from nucleus is: -9991.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007880932964]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9992.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9992.117
+Final synaptic output  from nucleus is: -9992.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007880144213]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9993.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9993.117
+Final synaptic output  from nucleus is: -9993.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007879355623]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9994.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9994.117
+Final synaptic output  from nucleus is: -9994.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007878567191]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9995.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9995.117
+Final synaptic output  from nucleus is: -9995.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007877778916]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9996.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9996.117
+Final synaptic output  from nucleus is: -9996.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007876990798]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9997.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9997.117
+Final synaptic output  from nucleus is: -9997.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.001000000787620284]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9998.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9998.117
+Final synaptic output  from nucleus is: -9998.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007875415036]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -9999.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -9999.117
+Final synaptic output  from nucleus is: -9999.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007874627391]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -10000.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -10000.117
+Final synaptic output  from nucleus is: -10000.117
+Sum of errors are:244
+Gathering the sigmoid derivatives of our errors...
+Surmising the sigmoid derivatives and getting a mean average
+The Mean average sigmoid derivative is: [0.0010000007873839905]
+Getting a dot product of mean average of sigoid derivatives and a transposition of our training data...
+DotProd Outputs: []
+Adding the adjustments required to update our synaptic value...
+Adding: true
+Surmising the adjustments to get a mean average...
+The surmised values of the adjustments are: -10001.0
+The mean average adjustment required is: -1.0
+Aadding the adjustment to the synaptic value...
+New Synaptic Value is: -10001.117
+Final synaptic output  from nucleus is: -10001.117
+nucleus added
+Touch Proximity added
+Green proximity added
+Red proximity added
+Neuron built!
+Creating Neuron of quantity: 32
+Creating Volume cubic size: 64
+
+[[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []], [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]] is the three d list of 64indices
+Populating
+Original mapping after first generation: 1763377291
+Original mapping after first generation: -768212682
+Original mapping after first generation: 995164606
+Original mapping after first generation: -1536425375
+Original mapping after first generation: 226951930
+Original mapping after first generation: 1990329223
+Original mapping after first generation: -541260786
+Original mapping after first generation: 1222116495
+Original mapping after first generation: -1309473482
+Original mapping after first generation: 453903836
+Original mapping after first generation: -2077686117
+Original mapping after first generation: -314308783
+Original mapping after first generation: 1449068497
+Original mapping after first generation: -1082521493
+Original mapping after first generation: 680855814
+Original mapping after first generation: -1850734181
+Original mapping after first generation: -87356855
+Original mapping after first generation: 1676020475
+Original mapping after first generation: 1676020475
+Original mapping after first generation: 1676020475
+Original mapping after first generation: -855569481
+Original mapping after first generation: 907807829
+Original mapping after first generation: -1623782153
+Original mapping after first generation: 139595132
+Original mapping after first generation: 139595132
+Original mapping after first generation: 1902972414
+Original mapping after first generation: 1902972414
+Original mapping after first generation: -628617598
+Original mapping after first generation: 1134759727
+Original mapping after first generation: -1396830238
+Original mapping after first generation: 366547054
+Original mapping after first generation: 366547054
+Original mapping after first generation: 2129924356
+Mapped Volume keys: 0	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 1	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 4	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 13	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 14	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 16	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 17	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 20	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 21	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 25	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 28	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 31	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 36	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 39	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 40	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 41	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 43	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 44	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 48	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 50	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 51	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 53	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 54	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 55	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 57	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 58	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 62	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Mapped Volume keys: 63	Values: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564]
+Need to work out how to connect them now (via Connections()), sending mapped volume to method..... back to the drawing board!!
+Before: 2129924356
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+After: 2129924356
+Before: 2129924356
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+After: 2129924356
+Mapped Volume: 2129924356
+Connections: []
+Volume Key: 0 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 1 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 4 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 13 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 14 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 16 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 17 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 20 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 21 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 25 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 28 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 31 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 36 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 39 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 40 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 41 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 43 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 44 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 48 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 50 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 51 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 53 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 54 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 55 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 57 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 58 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 62 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Volume Key: 63 Volume Value: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564].
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Neuron: [-10001.117, 0.39269908169872414, 1.325359400733194, 6.135923151542564] - Activated!
+
+Activated Neurons.
+
+Weights: [-0.5380645, -0.33711803, -1.5189272, -0.78730965, -0.72516525, -1.3818989, -0.89912605, -1.7659868, -0.80490947, -0.43693078, -1.3335632, -1.4944477, -1.2296216, -0.7739285, -0.030316949, -0.034361005, -0.24163496, -1.9538363, -0.117501736, -1.6480465, -1.4500921, -1.3741281, -1.7422057, -1.2640486, -1.7067968, -0.5896505, -1.9535238, -1.9972267, -0.9065205, -1.9815503, -0.071026325, -0.8741007, -1.7910187]
+
+DotProd Outputs: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+The Value assigned to sigmoid is: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Adjusted Sigmoid:[-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+Considering new situation: [1, 1, 1, 0, 1]
+

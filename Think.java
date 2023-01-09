@@ -10,6 +10,6 @@ public class Think {
      * @param in
 	 * @throws IOException 
      */
-    public static ArrayList<Object> think (ArrayList<Object> in) throws IOException {return Sigmoid.sigmoid(Dot.dot(in, Simple_Neural_Network.getSynaptics()));}
+    public static ArrayList<Object> think (ArrayList<Object> in) throws IOException {return Sigmoid.sigmoid(Dot.dot(in, Synaptics.synaptics()));}
 	
 }
