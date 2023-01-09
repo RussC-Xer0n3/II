@@ -84,7 +84,7 @@ public class Simple_Neural_Network {
     	Synaptics.setNeuron(Simple_Neural_Network.getNeuron_qty());
     	Simple_Neural_Network.setNeuron(Neuron.neuron());
     	Simple_Neural_Network.setVolume(Cubic_Mapping_4.mapping(Simple_Neural_Network.getNeuron(), Simple_Neural_Network.getNeuron_qty(), Simple_Neural_Network.getVol()));
-    	Simple_Neural_Network.setConnections(Connections.connections((Map<Integer, ArrayList<Object>>) Distribute.send_synaptic(Simple_Neural_Network.getVolume())));
+    	Simple_Neural_Network.setConnections(Connections.connections());
     	
 		Logger_Writer.setSynaptics(synaptics);
 		Logger_Writer.setSituation(situation);
