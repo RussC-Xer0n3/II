@@ -69,7 +69,6 @@ public class Simple_Neural_Network {
      * @param args
      * @throws IOException 
      */
-    @SuppressWarnings("unchecked")
 	public static void main (String []args) throws IOException {
     	Logger_Writer.Logger_Creator();
     	/**
@@ -82,7 +81,6 @@ public class Simple_Neural_Network {
     	Simple_Neural_Network.setVol(4);
     	synaptics.addAll(Synaptics.synaptics());
     	Synaptics.setNeuron(Simple_Neural_Network.getNeuron_qty());
-    	Simple_Neural_Network.setNeuron(Neuron.neuron());
     	Simple_Neural_Network.setVolume(Cubic_Mapping_4.mapping(Simple_Neural_Network.getNeuron(), Simple_Neural_Network.getNeuron_qty(), Simple_Neural_Network.getVol()));
     	Simple_Neural_Network.setConnections(Connections.connections());
     	
@@ -102,6 +100,7 @@ public class Simple_Neural_Network {
 			System.err.println("Volume Key: " + be.getKey() + " Volume Value: " + be.getValue() + ".\n");
 		}
 
+		Simple_Neural_Network.setNeuron(Neuron.neuron());
 		//Activate the training module in each neuron
 		for (Entry<Integer, ArrayList<Object>> activate : volume.entrySet()) {
 			//ArrayList<Object> neurological = new ArrayList<>(activate.getKey());

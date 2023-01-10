@@ -30,8 +30,9 @@ public class Training {
     	//TODO: Add timers
     	//TODO: Call to connection checks for I/O
 
-    	int a, b;
-    	int sum = 0;
+    	int a = 0;
+    	float b = 0;
+    	float sum = 0;
     	float a_sum = 0;
     	int t, e, u, r, h, k, q, x;
     	float inputsY, sigdiv, inputsN, inputsA;
@@ -54,51 +55,55 @@ public class Training {
         System.err.println("Training set: " + training);
         ArrayList<Object> output = Think.think(training);
         System.err.println("Output from sigmoid of the dot product of our training set and Auto generated Synaptics: " + output);
-        ArrayList<Object> sds = new ArrayList<>(Sigmoid_derivative.sigmoid_derivative(output));
+        float sds = Sigmoid_derivative.sigmoid_derivative(output);
         System.err.println("Sigmoid derivatives are of our Output are: " + sds);
         
         System.err.println("Assessing the error margins of synaptic input from the received synaptic value...");
         Logger_Writer.Logger_Generic("Beginning to assess the nucleus output in the think method: " + synaptic + "\n");
         for (t = 0; t <= t_qty; t++) {
         	//here is where we get the think() to consider the float synaptic value as it changes
-            for (e = 0; e < output.size()-1; e++) {
-            	for (int hh = 0; hh <= loaded.size()-1; hh++) {
-            		a = (int) loaded.get(hh);
-            		b = (int) output.get(e);
+            for (e = 0; e < loaded.size()-1; e++) {
+            	for (int hh = 0; hh <= output.size()-1; hh++) {
+            		a = (int) loaded.get(e);
+            		b = (float) output.get(hh);
 
-	            	if (a == b) {
-	            		sum += 1;}}
-	            	}
-            error.add(((output.size()-1 - sum) / 100) * output.size()-1);
-            Logger_Writer.setErrors(error);
-            Logger_Writer.Logger_Printer(PrinterState.ERRORS);     
-        System.err.println("Sum of errors are:" + sum);
-        sum = 0;
+            	}
+            	sum = a - b;
+            	error.add(sum);
+    		}
+            
+        float erro = 0;
+        for (int err = 0; err <= error.size()-1; err++) {
+        	erro += (float) error.get(err);
+        }
+        float err = erro / error.size();
+        Logger_Writer.setErrors(error);
+        Logger_Writer.Logger_Printer(PrinterState.ERRORS);
+        System.err.println("Errors are: " + err);
 
         System.err.println("Gathering the sigmoid derivatives of our errors...");
         //Get sigmoid derivatives of the errors
         for(q = 0; q < error.size()-1; q++) {
-            inputsY = (Integer) error.get(q);
-            for(r = 0; r < sds.size()-1; r++) {
-            	sigdiv = (Integer) sds.get(r);
-            	double m = inputsY *= sigdiv;
+            inputsY = (float) error.get(q);
+            for(r = 0; r < q; r++) {
+            	sigdiv = sds;
+            	float m = inputsY *= sigdiv;
             	if (m == 0.0) {
-            		m = 0.001;
+            		m = 1;
             	} else if (m == -0.0) {
-            		m = -0.001;
+            		m = -1;
             	}
                 mplex.add(m);}}
-        
+        float adj = err / sds;
         System.err.println("Surmising the sigmoid derivatives and getting a mean average");
-        //surmise them
-        double sumun = 0.0;
+        float sumun = 0;
         for (int y = 0; y <= mplex.size()-1; y++) {
-        	double un = (Double) mplex.get(y);
-        	sumun += un;
+        	float dd = (float) mplex.get(y);
+        	sumun += dd;
         }
         sumun /= mplex.size()-1;
         mplex.clear();
-        mplex.add(sumun);
+        mplex.add((float) sumun);
         
         System.err.println("The Mean average sigmoid derivative is: " + mplex);
         
@@ -107,7 +112,7 @@ public class Training {
         ArrayList<Object> m = new ArrayList<>(Dot.dot(mplex, Transpose.transpose(training)));
         
         System.err.println("Adding the adjustments required to update our synaptic value...");
-        System.err.println("Adding: " + adjustment.add(m));
+        System.err.println("Adding: " + adjustment.add(adj));
 
         System.err.println("Surmising the adjustments to get a mean average...");
     	//Take the adjustment values and surmise them ready for mean average

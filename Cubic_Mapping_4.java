@@ -58,7 +58,7 @@ public class Cubic_Mapping_4 {
 	 * @throws IOException 
 	 */
 	public static void populate(ArrayList<Object> neuron, int qty, double v) throws IOException {
-		System.err.println("Populating");
+		System.err.println("Populating volume with Neurons...");
 		Random rand = new Random();
 
 		int i;
@@ -74,9 +74,10 @@ public class Cubic_Mapping_4 {
 			System.err.println("Mapped Volume keys: " + be.getKey() + "\tValues: " + be.getValue());
 		}
 		
-		System.err.println("Need to work out how to connect them now (via Connections()), sending mapped volume to method..... back to the drawing board!!");
+		System.err.println("Call to Distribute from cubic mapping to get connections allocated...");
+		connections = Distribute.send_synaptic();
 		
-		connections = Distribute.send_synaptic(map);
+		System.err.println("Settings connections into simple neural network interface...");
 		Simple_Neural_Network.setConnections(connections);
 	}
 
@@ -90,32 +91,16 @@ public class Cubic_Mapping_4 {
 	 * @return 
 	 * @throws IOException 
 	 */
-	@SuppressWarnings("unchecked")
 	public static Map<Integer, ArrayList<Object>> mapping(ArrayList<Object> neuron, int qty, int n) throws IOException {
-		int j, k, l, i;
-
+		System.err.println("Mapping out a hash map of " + n + " cubed...");
 		int v = (int) Math.pow(n, 3);
 
-		System.err.println("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + v + "\n");
-		Logger_Writer.Logger_Generic("Creating Neuron of quantity: " + qty + "\nCreating Volume cubic size: " + v + "\n");
+		System.err.println("Creating Volume cubic size: " + v + "...");
+		Logger_Writer.Logger_Generic("Creating Volume cubic size: " + v + "\n");
 
 		ArrayList<ArrayList<ArrayList<Object>>> c = Cubic_Mapping_4.three_d_list(v);
-		System.err.println(c + " is the three d list of " + v + "indices");
-
-		/**
-		for (j = 0; j <= v; j++) {
-			map.put(j, (ArrayList<Object>) c.get(j).get(j).get(j));
-		}
-		*/
-		/**
-		for (j = 0; j < v; j++) {
-			for (k = 0; k < n; k++) {
-				for(l = 0; l < n; l++) {
-					c.get(j).get(k).add(l);
-					for (i = 0; i < v; i++) {
-						map.put(i, (ArrayList<Object>) c.get(j).get(k).get(l));
-					}}}}
-					*/
+		System.err.println("Created " + v + " indices in a cubinc Map...");
+		
 		Cubic_Mapping_4.populate(neuron, qty, v);
 
 		return map;}
@@ -125,7 +110,6 @@ public class Cubic_Mapping_4 {
 	 * @throws IOException 
 	 */
 	public static void clearall() throws IOException {
-		System.err.println("HashMap before clearance: " + map.hashCode() + "\n");
 		Logger_Writer.Logger_Generic("HashMap before clearance: " + map.hashCode() + "\n");
 		map.clear();
 		c.clear();

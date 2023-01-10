@@ -8,14 +8,14 @@ public class Sigmoid_derivative {
      * The derivative of the sigmoid function per iteration of x
      * @param output
      */
-    public static ArrayList<Object> sigmoid_derivative (ArrayList<Object> output) { 
-
-    	ArrayList<Object> derivative = new ArrayList<>();
+    public static float sigmoid_derivative (ArrayList<Object> output) { 
+    	float a = 0;
+    	//ArrayList<Object> derivative = new ArrayList<>();
 
     	for(int i = 0; i <= output.size()-1; i++) {
-    		int a = (int) output.get(i);
-    		derivative.add(a * (1 - a));}
-    	System.err.println(derivative);
-    	return derivative;}
+    		a = (float) output.get(i);}
+    	//System.err.println(derivative);
+    		return a * (1 - a);
+    	}
 
 }

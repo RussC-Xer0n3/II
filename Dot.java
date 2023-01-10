@@ -16,10 +16,11 @@ public class Dot {
     	ArrayList<Object> outputs = new ArrayList<>();
     	
     	for(int q = 0; q < in.size()-1; q++) {
-            int inputsI = (Integer) in.get(q);
+            float inputsI = (Float) in.get(q);
             for(int r = 0; r < out.size()-1; r++) {
             	float weights = (Float) out.get(r);
-                outputs.add(r, inputsI *= weights);}}
+            	float xx = inputsI *= weights;
+                outputs.add(xx);}}
     	
     	System.err.println("DotProd Outputs: " + outputs);
         return outputs;
